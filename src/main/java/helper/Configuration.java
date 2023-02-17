@@ -1,7 +1,7 @@
 package helper;
 
-import static jdk.internal.net.http.common.Utils.getProperty;
 
+import static jdk.internal.net.http.common.Utils.getProperty;
 
 public class Configuration {
 
