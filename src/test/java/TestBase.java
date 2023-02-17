@@ -3,8 +3,9 @@ import helper.Configuration;
 public class TestBase {
 
     public String baseUrl = Configuration.getBaseUrl();
-    public String sellerDB_Admin = Configuration.getSellerDB_Admin();
-    public String baseEndpoint = "/admin/v1/marketplaces";
-    public String registrationMP = "/{mp_code}/registration";
+    public String sellerDBAdmin = Configuration.getSellerDBAdmin();
+    public String xTaxamoToken = Configuration.getXTaxamoToken();
+    public String baseAdminEndpoint = "/admin/v1/marketplaces";
+    public String registrationMPEndpoint = "/{mp_code}/registration";
 
 }
