@@ -11,6 +11,10 @@ import static jdk.internal.net.http.common.Utils.getProperty;
 
 public class Configuration {
 
+    public static String getSellerDB_Admin() {
+        return getProperty("sellerDB_Admin");
+    }
+
     public static String getBaseUrl() {
         return getProperty("baseUrl");
     }
