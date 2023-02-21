@@ -1,0 +1,1427 @@
+{
+	"marketplace_code": "UAT_newcust_MARKETPLACE",
+	"reference_merchant": {
+		"email": "sebastian+UAT_newcust_MP@taxamo.com",
+		"postal_address_line2": "Line 2",
+		"business_name": "Sebastian's marketplace",
+		"settings": [
+			{
+				"effective_from": "1970-01-01",
+				"value": {
+					"invoicing": {
+						"invoice_footer_text": "This change is after bug",
+						"invoice_logo_url": "https://kamituel.pl/images/19adcdb5-1600.avif",
+						"invoice_email_from_address": "sebastian+newreplay01@taxamo.com"
+					}
+				}
+			},
+			{
+				"effective_from": "1970-02-01",
+				"value": {
+					"invoicing": {
+						"invoice_footer_text": "13.11.2021",
+						"invoice_logo_url": "https://kamituel.pl/images/bc1128d2-1600.webp",
+						"detect_currency_from_tax_country": true,
+						"invoice_email_from_address": "sebastian.falana_newMP@vertexinc.com",
+						"invoice_email_subject": "New INVOICE_TEST SEBA email subject 222",
+						"is_invoice_delivery_enabled": false,
+						"refund_note_email_subject": "New settings REFUND",
+						"invoice_number_format": "{{territory}}-{{seller_code}}-{{index}}"
+					}
+				}
+			},
+			{
+				"effective_from": "2021-12-17",
+				"value": {
+					"taxation": {
+						"digital": {
+							"back_to_back_transaction_templates": {
+								"transaction": {
+									"billing_address": {
+										"street_name": "b2b-template-street-digital",
+										"country_code": "EE"
+									},
+									"buyer_name": "b2b-template-name-digital",
+									"buyer_tax_number": "b2b-template-tax-444"
+								}
+							}
+						},
+						"physical": {
+							"back_to_back_transaction_templates": {
+								"transaction": {
+									"billing_address": {
+										"street_name": "b2b-template-street-physical222",
+										"country_code": "IT"
+									},
+									"buyer_name": "b2b-template-name-physical222",
+									"buyer_tax_number": "b2b-template-tax"
+								}
+							}
+						},
+						"back_to_back_transaction_tax_country_code": "FI"
+					},
+					"regions": {
+						"EU": {
+							"taxation": {
+								"digital": {
+									"is_taxation_enabled": true,
+									"is_seller_located_within_region": false
+								},
+								"physical": {
+									"is_seller_located_within_region": true,
+									"ioss_member_state_of_identification": "IT",
+									"ioss_registration_number": "11_MP_test_ioss",
+									"oss_member_state_of_identification": "FR",
+									"oss_registration_number": "11_MP_test_oss"
+								}
+							}
+						},
+						"GB": {
+							"taxation": {
+								"digital": {
+									"is_taxation_enabled": true
+								},
+								"physical": {
+									"is_seller_located_within_region": false
+								}
+							}
+						},
+						"SG": {
+							"taxation": {
+								"digital": {
+									"is_taxation_enabled": true
+								},
+								"physical": {
+									"is_seller_located_within_region": true,
+									"is_approved_ovr_vendor": false
+								}
+							}
+						},
+						"NO": {
+							"taxation": {
+								"digital": {
+									"is_taxation_enabled": true
+								},
+								"physical": {
+									"is_seller_located_within_region": false,
+									"special_tax_registration": "VOEC"
+								}
+							}
+						},
+						"NZ": {
+							"taxation": {
+								"digital": {
+									"is_taxation_enabled": true
+								},
+								"physical": {
+									"is_seller_located_within_region": false,
+									"liability_for_high_value_goods_in_mixed_value_consignment": true
+								}
+							}
+						},
+						"AU": {
+							"taxation": {
+								"digital": {
+									"is_taxation_enabled": true
+								},
+								"physical": {
+									"is_seller_located_within_region": false
+								}
+							}
+						}
+					},
+					"countries": {
+						"LU": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_NO"
+								}
+							}
+						},
+						"SG": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_SG"
+								}
+							}
+						},
+						"PT": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_PT"
+								}
+							}
+						},
+						"BE": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_BE"
+								}
+							}
+						},
+						"MC": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_MC"
+								}
+							}
+						},
+						"SK": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_SK"
+								}
+							}
+						},
+						"IT": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_IT"
+								}
+							}
+						},
+						"CY": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_CY"
+								}
+							}
+						},
+						"GB": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "999999999"
+								}
+							}
+						},
+						"HR": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_HR"
+								}
+							}
+						},
+						"DK": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_DK"
+								}
+							}
+						},
+						"SE": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_SE"
+								}
+							}
+						},
+						"LV": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_LV"
+								}
+							}
+						},
+						"SI": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_SI"
+								}
+							}
+						},
+						"AU": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_AU"
+								}
+							}
+						},
+						"RO": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_RO"
+								}
+							}
+						},
+						"NL": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_NL"
+								}
+							}
+						},
+						"US": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_US"
+								}
+							},
+							"country_subdivisions": {
+								"AZ": {
+									"taxation": {
+										"physical": {
+											"is_seller_registered": true,
+											"seller_tax_number": "AZ_US_TAX_NUMBER",
+											"has_physical_presence": true
+										}
+									}
+								},
+								"CA": {
+									"taxation": {
+										"physical": {
+											"is_seller_registered": true,
+											"seller_tax_number": "CA_US_TAX_NUMBER",
+											"has_physical_presence": true
+										}
+									}
+								}
+							}
+						},
+						"EE": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_EE"
+								}
+							}
+						},
+						"LT": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_LT"
+								}
+							}
+						},
+						"IE": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_IE"
+								}
+							}
+						},
+						"ES": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_ES"
+								}
+							}
+						},
+						"AT": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_AT"
+								}
+							}
+						},
+						"BG": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_BG"
+								}
+							}
+						},
+						"NO": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_NO"
+								}
+							}
+						},
+						"GR": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_GR"
+								}
+							}
+						},
+						"FR": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_FR"
+								}
+							}
+						},
+						"PL": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_PL"
+								}
+							}
+						},
+						"FI": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_FI"
+								}
+							}
+						},
+						"MT": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_MT"
+								}
+							}
+						},
+						"CZ": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_CZ"
+								}
+							}
+						},
+						"HU": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_HU"
+								}
+							}
+						},
+						"NZ": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "MERCHANTEU_NZ"
+								}
+							}
+						},
+						"DE": {
+							"taxation": {
+								"physical": {
+									"is_seller_registered": true,
+									"is_physical_tax_enabled": true,
+									"seller_tax_number": "DE999999999"
+								}
+							}
+						}
+					},
+					"invoicing": {
+						"invoice_footer_text": "01.12.21 ABAB",
+						"invoice_logo_url": "https://kamituel.pl/images/bc1128d2-1600.webp",
+						"detect_currency_from_tax_country": true,
+						"invoice_email_subject": "New INVOICE_TEST SEBA email subject 222",
+						"is_invoice_delivery_enabled": true,
+						"refund_note_email_subject": "New settings REFUND",
+						"invoice_number_format": "{{territory}}-{{seller_code}}-{{index}}"
+					}
+				}
+			}
+		],
+		"first_name": "s7mpuat",
+		"postal_address_line1": "Address Line 1"
+	},
+	"admin_settings": [
+		{
+			"effective_from": "1970-01-01",
+			"value": {
+				"regions": {
+					"NO": {
+						"lila": {
+							"digital": {
+								"is_lila_enabled": true
+							},
+							"physical": {
+								"is_lila_enabled": true
+							},
+							"services": {
+								"is_lila_enabled": true
+							}
+						}
+					},
+					"AU": {
+						"lila": {
+							"digital": {
+								"is_lila_enabled": true
+							},
+							"physical": {
+								"is_lila_enabled": true
+							},
+							"services": {
+								"is_lila_enabled": true
+							}
+						}
+					},
+					"NZ": {
+						"lila": {
+							"digital": {
+								"is_lila_enabled": true
+							},
+							"physical": {
+								"is_lila_enabled": true
+							},
+							"services": {
+								"is_lila_enabled": true
+							}
+						}
+					},
+					"SG": {
+						"lila": {
+							"digital": {
+								"is_lila_enabled": true
+							},
+							"physical": {
+								"is_lila_enabled": true
+							},
+							"services": {
+								"is_lila_enabled": true
+							}
+						}
+					},
+					"US": {
+						"lila": {
+							"digital": {
+								"is_lila_enabled": true
+							},
+							"physical": {
+								"is_lila_enabled": true
+							},
+							"services": {
+								"is_lila_enabled": true
+							}
+						}
+					},
+					"EU": {
+						"taxation": {
+							"physical": {
+								"logic_rules": [
+									{
+										"transaction_line_kind": "b2c",
+										"rules": [
+											{
+												"name": "physical-shipment-into-EU-goods-above-150-eur-taxamo",
+												"condition": [
+													"and",
+													[
+														"not",
+														[
+															"=",
+															[
+																"get-in",
+																"transaction-line",
+																"ship-from-address",
+																"tax-region"
+															],
+															"EU"
+														]
+													],
+													[
+														">",
+														[
+															"get-in-arg",
+															[
+																"var",
+																"consignment-value"
+															],
+															"amount"
+														],
+														"150"
+													]
+												],
+												"variables": [
+													"consignment-value",
+													[
+														"convert-amount-with-fallback",
+														[
+															"get-in",
+															"amount-for-shipment-country"
+														],
+														[
+															"get-tax-region-by-key",
+															"EU"
+														],
+														"EUR",
+														[
+															"get-in",
+															"transaction-data",
+															"currency-code"
+														],
+														[
+															"get-in",
+															"transaction-data",
+															"tax-timestamp"
+														],
+														[
+															"get-in",
+															"transaction-data",
+															"tax-timestamp"
+														]
+													]
+												],
+												"effect": [
+													"->",
+													[
+														"assoc-in",
+														"transaction-line",
+														"tax-liability-rule",
+														[
+															"get-in",
+															"_rule",
+															"name"
+														]
+													],
+													[
+														"assoc-in",
+														"transaction-line",
+														"tax-liability-owner-code",
+														"buyer"
+													],
+													[
+														"assoc-in",
+														"transaction-line",
+														"additional-currencies",
+														"consignment",
+														[
+															"dissoc",
+															[
+																"var",
+																"consignment-value"
+															],
+															"amount"
+														]
+													],
+													[
+														"assoc-in",
+														"transaction-line",
+														"invoice-status",
+														"F"
+													]
+												]
+											}
+										]
+									}
+								]
+							}
+						},
+						"lila": {
+							"digital": {
+								"is_lila_enabled": true
+							},
+							"physical": {
+								"is_lila_enabled": true
+							},
+							"services": {
+								"is_lila_enabled": true
+							}
+						}
+					},
+					"GB": {
+						"taxation": {
+							"physical": {
+								"logic_rules": [
+									{
+										"transaction_line_kind": "b2c",
+										"rules": [
+											{
+												"name": "physical-shipment-into-GB-goods-below-or-equal-135-gbp-taxamo",
+												"condition": [
+													"and",
+													[
+														"=",
+														[
+															"get-in",
+															"transaction-data",
+															"ship-to-address",
+															"tax-region"
+														],
+														"GB"
+													],
+													[
+														"not",
+														[
+															"=",
+															[
+																"get-in",
+																"transaction-line",
+																"ship-from-address",
+																"tax-region"
+															],
+															"GB"
+														]
+													],
+													[
+														"not=",
+														[
+															"get-in",
+															"transaction-line",
+															"ship-from-address",
+															"country-subdivision-code"
+														],
+														"GB-NIR"
+													],
+													[
+														"<=",
+														[
+															"get-in-arg",
+															[
+																"var",
+																"consignment-value"
+															],
+															"amount"
+														],
+														"135"
+													]
+												],
+												"variables": [
+													"consignment-value",
+													[
+														"convert-amount-with-fallback",
+														[
+															"get-in",
+															"amount-for-shipment-country"
+														],
+														[
+															"get-tax-region-by-key",
+															"GB"
+														],
+														"GBP",
+														[
+															"get-in",
+															"transaction-data",
+															"currency-code"
+														],
+														[
+															"get-in",
+															"transaction-data",
+															"tax-timestamp"
+														],
+														[
+															"get-in",
+															"transaction-data",
+															"tax-timestamp"
+														]
+													]
+												],
+												"effect": [
+													"->",
+													[
+														"assoc-in",
+														"transaction-line",
+														"tax-liability-rule",
+														[
+															"get-in",
+															"_rule",
+															"name"
+														]
+													],
+													[
+														"assoc-in",
+														"transaction-line",
+														"tax-liability-owner-code",
+														"buyer"
+													],
+													[
+														"assoc-in",
+														"transaction-line",
+														"additional-currencies",
+														"consignment",
+														[
+															"dissoc",
+															[
+																"var",
+																"consignment-value"
+															],
+															"amount"
+														]
+													],
+													[
+														"assoc-in",
+														"transaction-line",
+														"invoice-status",
+														"F"
+													]
+												]
+											}
+										]
+									}
+								]
+							}
+						},
+						"lila": {
+							"digital": {
+								"is_lila_enabled": true
+							},
+							"physical": {
+								"is_lila_enabled": true
+							}
+						}
+					}
+				},
+				"seller_self_registration": {
+					"is_enabled": true,
+					"seller_role_names": [
+						"assure_seller_owner"
+					],
+					"seller_settings": {
+						"invoicing": {
+							"invoice_logo_url": "https://kamituel.pl/images/19adcdb5-1600.webp"
+						}
+					},
+					"contract": {
+						"markdown": "### TERMS OF SERVICE\n\n(v04-06-2021)\n\n\n#### BACKGROUND\n\nTaxamo is a provider of certain tax technology services via its electronic interface that facilitate online sales.\n\nTaxamo has agreed to provide the Seller, being a Non-Natural Person, with its Assure Services (terms as defined below).\n\n\n#### AGREED TERMS\n\nYOUR ATTENTION IS PARTICULARLY DRAWN TO: (I) THE DESCRIPTION OF THE SERVICES AS SET OUT IN CLAUSE 3 (SERVICES); (II) CLAUSE 8 (TAXES); (III) CLAUSE 12 (INDEMNIFICATION); AND (IV) CLAUSE 13 (LIMITATIONS AND EXCLUSIONS OF LIABILITY).\n\n#### 1. TERMS\n\n##### 1.1\n\n**Terms**: These terms of service, the Dashboard Terms of Use and the Data Processing Terms together form the terms governing the provision of and use of the Services (the “**Terms**”).\n\n##### 1.2\n\n**Contracting Parties**: These Terms are entered into between: (i) TAXAMO MARKETPLACE LIMITED, a company registered in Ireland with a registered company address of RDI HUB, Anglont, Killarney Road Killorglin Co Kerry, Killorglin, Kerry, Ireland, a registered company number 670563 and an Irish VAT number of 3764989CH (“**Taxamo**”): and (ii) the entity agreeing to these Terms (the “**Seller**”'), as identified by you during the Services Acceptance Process.\n\n(Taxamo and the Seller are each a “**Party**” and together the “**Parties**”).\n\n##### 1.3\n\n**Acceptance of these Terms**: These Terms are legally binding and are effective as of the date you confirm your acceptance of these Terms during the Services Acceptance Process (“**Effective Date**”). You represent and warrant that: (i) you have read, understand and accept these Terms on behalf of the Seller; and (iii) you are authorised to enter into and have legal authority to bind the Seller to these Terms. \n\n**IF YOU DON'T HAVE THE LEGAL AUTHORITY TO BIND THE SELLER TO THESE TERMS PLEASE DO NOT CONFIRM ACCEPTANCE OF THESE TERMS.**\n\n##### 1.4\n\n**Entire Agreement**: These Terms: (i) exclusively govern the provision of the Services by Taxamo to the Seller and they apply to the exclusion of any other terms and conditions that the Seller may seek to impose or incorporate, or which are implied by law, trade custom, practice or course of dealing; and (ii) constitute the entire agreement between the Seller and Taxamo in relation to its subject matter. The Seller acknowledges that in entering into these Terms it has not wholly or partially relied on, and will have no remedies in respect of, any representations, agreements, statements, assurance, promise, warranty or undertakings (whether made innocently or negligently) that is not set out in these Terms. \n\n##### 1.5\n\n**Definitions**: Unless as otherwise defined in these Terms, defined terms (Capitalised) will be as defined in Clause 21 (Definitions).\n\n##### 1.6\n\n**Seller copy of the Terms**: Following your acceptance of these Terms on behalf of the Seller, a copy of the Terms will be emailed to the Seller the email address provided in the Services Acceptance Process. Please save a copy of these Terms for future reference.\n\n##### 1.7\n\n**Contacting Taxamo**: If the Seller is experiencing any issues with the Services or needs to contact Taxamo with respect to anything related to the Services, the Seller can contact Taxamo via [The Service Support Form](https://info.taxamo.com/support). Taxamo will make reasonable endeavours to respond to what Taxamo, in its sole discretion, determines to be a material support request within 72 hours of having received the material support request via [The Service Support Form](https://info.taxamo.com/support) provided that if a material support request is submitted by the Seller outside of the Taxamo Business Hours the response time will run from the next occurring Taxamo Business Hours. All legal notices to be provided under these terms will be sent in accordance with the requirements of Clause 16.\n\n##### 1.8\n\n**Changes to these Terms**: Taxamo has the right to vary these Terms by giving the Seller notice in writing of such variations to the Terms in accordance with Clause 16 (“**Variation Notice**”). If the variations to the Terms materially and adversely affect the Seller, then the Seller may terminate the Terms by providing written notice to Taxamo at any time within the 15-day period following the issuing of the Variation Notice and in accordance with the requirements of Clause 16. If the Seller does not terminate these Terms within this notice period then the Seller will be bound by the updated Terms beginning upon the effective date set forth in the Variation Notice.\n\n#### 2. SERVICE TERM\n\n##### 2.1.\n\nThese Terms come into force and effect on the Effective Date and will continue thereafter for the duration of the Initial Term after which the Initial Term will be automatically extended for additional twelve month periods (“**Renewal Terms**”) unless either Party gives the other Party written notice of its intent to terminate these Terms at 30 days in advance of the expiration of either the Initial Term or a Renewal Term (as applicable).\n\n##### 2.2\n\nNotwithstanding the foregoing, these Terms may be terminated prior pursuant to Clauses 1.8, 11, 15 and 17 or the Data Processing Terms.\n\n#### 3. SERVICES: THE SELLER'S ATTENTION IS PARTICULARLY DRAWN TO THIS CLAUSE\n\n##### 3.1\n\nSubject to the Seller performing and adhering to its obligations under these Terms, including, but not limited to, the Assure Service Dependencies, Taxamo will provide the following “**Services**” (as described below) for the duration of the Service Term. \n\n**Product Classification**: Subject to Clause 6(e), Taxamo may provide the Product Classification Service. The Product Classification Service and the PC Tool is provided on an “as-is'' and “as available” basis and Taxamo provides no warranty, guarantee or undertaking that: (i) the Seller’s use of the PC Tool will be uninterrupted or error-free; or (ii) that the that the Product Classification Services result in accurate Product Classification. The PC Tool is subject to modification from time to time at Taxamo’s sole discretion, for any purpose deemed appropriate by Taxamo. Taxamo reserves the right to suspend the Seller’s access to the PC Tool for: (i) scheduled or emergency maintenance, or (ii) in the event Seller is in breach of any PC Tool terms and conditions governing the use of the PC Tool.\n\n**Transaction Determination**: The Taxamo Platform will, based on a Taxamo algorithm and in real time during Checkout, establish if a Transaction is either:\n\n- an Assure Transaction; or\n- an Excluded Transaction\n\nby accessing the Transaction Data through the Services Integration to automatically determine:\n\n(i) the location of the Buyer in accordance with Applicable VAT Laws;\n\n(ii) the Buyer's tax status (e.g. a taxable or non-taxable Person);\n\n(iii) the party that is liable for the VAT;\n\n(iv) the correct rate of VAT applicable (by line item); and\n\n(v) the final VAT inclusive sale price of the Products (by line item).\n\nThe Taxamo Platform will automatically and in real-time communicate the results of these determinations for inclusion in Checkout.\n\n**Excluded Transactions**: Subject to Clause 8, if Taxamo determines that a Transaction is an Excluded Transaction, the Parties agree that: (i) the Taxamo Platform may suggest correct VAT treatment and/or calculate the applicable VAT rate for such an Excluded Transaction at Checkout (“**ET Suggested VAT Treatment**”); (ii) Taxamo provides no warranty or guarantee that the ET Suggested VAT Treatment is accurate or correct or complies with Applicable Tax Laws; (iii) Taxamo has no obligations, responsibilities or liabilities to the Seller with respect to the Excluded Transaction or any ET Suggested VAT Treatment; and (iv) Taxamo reserves the right to charge a fee for the provision of the ET Suggested VAT Treatment on Excluded Transactions..\n\n**Assure Services**: If Taxamo determines that a Transaction is an Assure Transaction, the Parties agree that the Assure Transaction will be subject to the Assure Services (as defined below).\n\n“**Assure Services**” means Taxamo:\n\n1.\tassisting and facilitating the online sale of an Assure Transaction through the Taxamo Platform;\n2.\tdetermining, via the Taxamo Platform, the VAT liable on an Assure Transaction per line item (the “**Assure VAT**” or the “**Assure VAT Amount**”);\n3.\tas the deemed supplier under Applicable VAT Law (“**Deemed Supplier**”), becoming the taxable person liable for the Assure VAT; \n4.\tbecoming entitled to the payment of the Assure VAT Amount and the Assure Transaction Charge from the Seller in accordance with Clause 4.\n5.\tas the Deemed Supplier, settling the Assure VAT Amount to the Relevant Tax Authority;\n6.\tfor each Assure Transaction, generating and issuing an invoice to the Buyer indicating Taxamo’s name, address, invoice sequential number and VAT registration number thereon, together with a footnote detailing Taxamo’s role as Deemed Supplier for the benefit and information of the Buyer (“**Assure Invoice**”);\n7.\twhere so required by Applicable Tax Laws, generating and issuing a self-billed invoice for an Assure Transaction to recognise the deemed supply from the Seller to Taxamo (“**Self-Billed Invoice**”);\n8.\tdetermining the critical design and content to be included in Assure Invoices, such as Taxamo information and the Seller information to be included and footnote detailing Taxamo’s role as the Deemed Supplier in the Assure Transaction for the benefit of the Buyer;\n9.\tstoring Tax Documents and critical Transaction Data for the purpose of responding to any Applicable Tax Authority audit enquiries;\n10.\tproviding reports via the Dashboard that detail the Assure Transaction supplies made by Taxamo, as the Deemed Supplier, in the Territory, along with the date and value of such supplies; and\n11.\tgenerating a monthly VAT & Assure Payments fee report.\n\nThe Parties agree and acknowledge that with respect to an Assure Transaction: \n\n- notwithstanding the fact that in the provision of the Assure Services Taxamo is the Deemed Supplier: (i) Taxamo will never take legal title, right or interest in a Product; (ii) and will never be responsible for supply of or the manufacture of or any defect in a Product; and (iii) will have no responsibility or legal obligation to the Seller or Buyer with respect to a Product;\n- that the Taxamo Platform is: (i) an integral part of the Checkout process; and (ii) the final determinant of the VAT inclusive price of the Product communicated to the Buyer; and\n- if, subsequent to an Assure Transaction, Taxamo is ultimately determined by a Relevant Tax Authority not to be the Deemed Supplier, Taxamo is hereby expressly appointed and authorised by the Seller to: (i) act as the deemed supplier for the purpose of settling the Seller’s VAT liability to the Relevant Tax Authority; and (ii) to perform all elements of the Assure Services. \n\n**Refunds**: The Services and the Taxamo Platform can support Refunds. Where the Seller requests a Refund through the Taxamo Platform, Taxamo:\n\n- will not process a Refund if it has paid the Assure VAT Amount to the Relevant Tax Authority and the Relevant Tax Authority has not credited or transferred to Taxamo the Assure VAT Amount;\n- may suspend the Refund functionality on the Taxamo Platform if it determines, in its reasonable opinion, that the Refund is related to suspicious activity. For example, if a large or unusual volume of Refunds are requested or processed through the Taxamo Platform;\n- will require that the Seller provides Taxamo with all critical information related to the Refund and evidence that the related funds (VAT exclusive price) have been refunded to the Buyer; and\n- will determine if the Refund complies with Taxamo’s own policies that apply to the processing of such Refunds\n\n(“**Refund Conditions**”).\n\nSubject to the Refund Conditions, if Taxamo processes a Refund, it:\n\n- will either: (i) refund the related Assure VAT Amount to the Seller using any reasonable payment method or as otherwise agreed by the Parties; or (ii) invoke it Rights Of Set-Off;\n- may, in its sole discretion, charge what it determines to be a reasonable fee to possess the Refund (“**Assure Refund Charge**”); and\n- will process the Refund on a periodic basis as determined by Taxamo from time to time. For example, it may process all Refunds on a set monthly basis.\n\n#### 4.\tCHARGES AND PAYMENTS\n\n##### 4.1\n\nIn consideration of Taxamo performing the Services, the Seller will pay the Service Charges, including, not limited to the Seller paying Taxamo the Assure Transaction Charges for the provision of the Assure Services.\n\n##### 4.2\n\nTo effect payment of an Assure Payment or any Non-Assure Charges , the Seller agrees that Taxamo may request payment from the Seller Payment Method in advance on an estimated basis, on a per Transaction basis and/or at such intervals as Taxamo may elect in its sole discretion from time to time.\n\n##### 4.3\n\nIf the Seller fails to make payment of an Assure Payment or any Non-Assure Charges to Taxamo in accordance with these Terms, then, without limiting Taxamo’s remedies under Clause 12 (Termination):\n\n- (a)\tthe Seller will pay interest on the overdue sum from the due date until payment of the overdue sum, whether before or after judgment. Interest under this Clause will accrue each day at 2% a year above the base rate as set by the European Central Bank, but at 4% a year for any period when that base rate is below 0%; and/or\n\n- (b)\tTaxamo may suspend all Services until payment has been made in full.\n\n##### 4.4\n\nAll Assure Payments and Non-Assure Charges are to be paid in full without any set-off, counterclaim, deduction or withholding.\n\n##### 4.5\n\nTaxamo may at any time, without notice to Seller, set off any liability of the Seller to Taxamo against any liability of Taxamo to the Seller, whether either liability is present or future, liquidated or unliquidated, and whether or not either liability arises under these Terms (“**Rights Of Set-Off**”). If the liabilities subject to the Rights Of Set-Off are expressed in different currencies, Taxamo may convert either liability at a market rate of exchange for the purpose of set-off. The exercise of the Rights Of Set-Off shall not limit or affect any other rights or remedies available to Taxamo under these Terms or otherwise.\n\n##### 4.6\n\nIf any Tax reduces the amount that would otherwise be paid by the Seller to Taxamo in Assure Payments or the Non-Assure Charges, the Seller will pay an additional amount to Taxamo so that the burden of the Tax is borne by the Seller and not by Taxamo and that Taxamo receives the full value of the Assure Payments or the Non-Assure Charges.\n\n##### 4.7\n\nAny extended or additional services that fall outside the scope of the Services described in these Terms will be provided at an additional cost to the Seller. \n\n##### 4.8\n\nTaxamo may provide Seller Payment Methods that are subject to additional terms which the Seller may have to accept prior to using the applicable Seller Payment Methods.\n\n#### 5. TAXAMO OBLIGATIONS\n\n##### 5.1\n\nTaxamo shall supply the Services to the Seller in accordance with these Terms in all material respects.\n\n##### 5.2\n\nTaxamo warrants to the Seller that the Services will be provided using reasonable care and skill. \n\n\n#### 6. SELLER’S OBLIGATION\n\n##### 6.1\n\nThe Seller represents, warrants and undertakes (as applicable) to Taxamo that:\n\n###### 6.1. (a)\n\nit is a Non-Natural Person;\n\n###### 6.1. (b)\n\nthe Services Integration will be successfully completed in accordance with the requirements set out in Taxamo’s Technical Documentation and that it has and will maintains secure, reliable and appropriate connections and communication devices with sufficient capacity and bandwidth to maintain the Service Integration for the duration of the Term (as required and as applicable);\n\n###### 6.1. (c)\n\nit will: (i) when prompted on the Taxamo Platform, provide the requested details of the Seller Payment Method for the purpose of settling the Assure Payments and any Non-Assure Charges; and (ii) update the Seller Payment Method details or utilise an alternative Seller Payment Method, as may be required from time to time to ensure the payment of the Assure Payments and any Non-Assure Charges are made in accordance with these Terms;\n\n###### 6.1. (d)\n\nthe Transaction Data will be: (i) provided to Taxamo through the Taxamo API; and (ii) complete and accurate;\n\n###### 6.1. (e)\n\nit will either: (i) provide Taxamo with accurate Product Classifications; or (ii) when prompted by the PC Tool, provide a sufficient natural-language description for each Product for the purpose of Taxamo providing the Product Classification Service;\n\n###### 6.1. (f)\n\nits Postal Carrier supports the application of the IOSS Number to the parcels containing the Assure Transaction Product(s) (Taxamo as the Deemed Supplier) for the purpose of this being communicated to the applicable customs authority in the Territory;\n\n###### 6.1. (g)\n\nit agrees to accept Self Billed Invoices from Taxamo and not to raise sales invoices for Assure Transactions covered by Self Billed Invoices;\n\n###### 6.1. (h)\n\nhas and will have appropriate third party arrangements in place to import the Products into the Territory and to meet its obligations under these Terms;\n\n###### 6.1. (i)\n\nit supplies and maintains on the Taxamo Platform valid,  accurate and up to date Seller information contact information that may be used among other for audit, displayed on Invoices, shared with tax authorities;\n\n###### 6.1. (j)\n\nThe Seller will comply with all Applicable Laws and guidelines governing the importation of the Products into the Territory including, but not limited to, any labelling requirements;\n\n###### 6.1. (k)\n\n(Clauses 5.1(a) to 5.1(j) are the together defined as the “**Assure Service Dependencies**” and are deemed to be conditions precedent to the provision of the Assure Services)\n\n###### 6.1. (l)\n\nit will only provide the IOSS Number to its Postal Carrier for Assure Transactions and the Seller acknowledges that the IOSS Number is deemed to commercially sensitive and confidential information;\n\n###### 6.1. (m)\n\nit is free to enter into these Terms and has and will maintain all consents, authorisations, orders and approvals of, or filings or registrations as required for or in connection with the execution and delivery of these Terms by it and/or the performance of its obligations under these Terms; \n\n###### 6.1. (n)\n\nthat it will not: (i) introduce to Taxamo’s network and information systems any disabling programs or devices, viruses, Trojan horses, worms or other computer programming routines that may damage or detrimentally interfere or have an adverse effect on the functionality of Taxamo’s network and information systems; and (ii) it will not circumvent or attempt to circumvent any applicable security measures of any element of the Services;\n\n###### 6.1. (o)\n\nit will: (i) not make any promises or representations or give any warranties, guarantees or indemnities in respect of Taxamo, the Taxamo Platform or the Services except for those expressly authorised by Taxamo in writing; and (ii) only use the Taxamo Platform and the Services for purposes that are permitted by any Applicable Law or generally accepted practices or guidelines;\n\n###### 6.1. (p)\n\nit is solely responsible for its relationship with its Buyers; \n\n###### 6.1. (q)\n\nit will: (i) comply with all Applicable Laws, including, but not limited to, complying with all applicable laws, statutes, regulations, and codes relating to anti-bribery and anti-corruption including but not limited to the Bribery Act 2010; and (ii) only use the Services and the Taxamo Platform for purposes permitted under Applicable Laws and in accordance with these Terms;\n\n###### 6.1. (r)\n\nit will cooperate with Taxamo in all matters relating to the Services and perform all obligations relating to the Services;\n\n###### 6.1. (s)\n\nit will keep all of our materials, equipment, documents and other property (“**Taxamo Materials**”) in safe custody at its own risk; \n\n###### 6.1. (t)\n\nit will comply with and procures that its Designated Users will comply with the Dashboard Terms of Use; and\n\n###### 6.1. (u)\n\nit will provide Taxamo with all information and records reasonably required by Taxamo in connection with any regulatory, audit or legal examinations, requests or proceedings applicable or related to the Services.\n\n#### 7.\tLICENCES AND RIGHTS OF USE\n\n##### 7.1\n\nTaxamo hereby grants to the Seller: (i) a limited, non-exclusive non-transferable, non-sublicensable licence to use the Taxamo API for the duration of the Service Term and for the sole purpose of receiving the Services provided that the Seller may not distribute, modify, publicly display the Taxamo API, and may not reproduce the Taxamo API; and (ii) and its Designated Users access to and use of the Dashboard for the duration of the Service Term subject to the Dashboard Terms of Use.\n\n##### 7.2\n\nSubject to the Seller’s agreement to, and ongoing compliance with, any terms and condition governing its access to the PC Tool, Taxamo will provide the Seller with access to the PC Tool through the Taxamo Platform. The PC Tool is subject to modification from time to time at Taxamo’s sole discretion, for any purpose deemed appropriate by Taxamo. Taxamo reserves the right to suspend the Seller’s access to the PC Tool: (i) for scheduled or emergency maintenance, or (ii) in the event Seller is in breach of any PC Tool terms and conditions, including failure to pay any amounts due to Taxamo. \n\n##### 7.3\n\nThe Seller hereby grants Taxamo a non-exclusive non-transferable, royalty free licence for the duration of the Service Term to use the Seller’s name, trademarks, service marks, logos, trade names, domain names and/or branding as required by Taxamo to include on the Tax Documents.\n\n#### 8. TAXES: THE SELLER'S ATTENTION IS PARTICULARLY DRAWN TO THIS CLAUSE\n\n##### 8.1\n\nThe Parties agree and acknowledge that:\n\n###### 8.1 (a)\n\nif as a result of providing the Assure Services and being the Deemed Supplier, Taxamo, in addition to being the taxable person liable for the Assure VAT Amount, becomes the taxable person liable for any other Taxes (“**Additional Assure Taxes**”), the Parties agree that Taxamo will be entitled to recover an amount equal to the Additional Assure Taxes (“**Additional Assure Tax Amount**”) from the Seller;\n\n###### 8.1 (b)\n\nthe Seller is solely responsible and liable for the Seller Taxes and any associated obligations, including, but not limited to: (i) assessing, collecting, recording Seller Taxes and reporting and remitting Seller Taxes to the Applicable Tax Authority; (ii) Seller Tax compliance, policies and positions taken; (iii) conducting Seller Tax due diligence and seeking the assistance of a qualified legal, tax, or accounting professionals; and (iv) any interest, penalties, or fines arising out of any mis-declaration of the Seller Taxes;\n\n###### 8.1 (c)\n\nthe Seller is solely responsible for conducting its own due diligence on the Services and determining if the Services can facilitate its compliance with Applicable VAT Laws;\n\n###### 8.1 (d)\n\nTaxamo does not provide and the Services do not include professional Tax opinions or Tax management or Tax advice;\n\n###### 8.1 (e)\n\nthe Seller will never use the Services or the Taxamo Platform to avoid, lower or minimise the tax liability of a Transaction;\n\n###### 8.1 (f)\n\nTaxamo does not and can not monitor the Products that are subject to the Services and Taxamo declines all responsibility if goods and services other than the Products are sold through the Taxamo Platform; \n\n###### 8.1 (g)\n\nthe Services have been developed in accordance with Taxamo’s interpretation of the Applicable VAT Laws, all of which are open to interpretation by the courts, national government agencies and Relevant Tax Authorities. Taxamo does not warrant that: (i) the manner by which it has devised the Services will be accepted in every jurisdiction; and (ii) the Services facilitate the Seller’s compliance with Applicable VAT Laws; and\n\n###### 8.1 (h)\n\nthat if an Assure Transaction Amount has been miscalculated due to any input error or any other incomplete, inaccurate or misleading information provided to Taxamo by Buyers or the Seller, Taxamo can recover any Losses it incurs from the Seller and Taxamo accepts no liability for any related Losses incurred by the Seller.\n\n#### 9. THIRD PARTY SERVICE PROVIDER\n\nThe Seller agrees: (i) that Taxamo may engage certain third party service providers to facilitate the provision of the Services by Taxamo; and (ii) to cooperate with such third party service providers where such cooperation is reasonably required by Taxamo to provide the Services. \n\n#### 10. TRANSACTION DATA\n\n##### 10.1\n\nThe Parties acknowledge that: \n\n###### 10.1 (a)\n\nthe processing of Transaction Data that constitutes Personal Data in the performance of their respective obligations will be subject to the Data Processing Terms; and\n\n###### 10.1 (b)\n\nthe Seller agrees that it will ensure (and is exclusively responsible for) the accuracy, quality, integrity and legality of the Transaction Data provided to Taxamo.\n\n##### 10.2\n\nThe Seller:\n\n###### 10.2 (a)\n\nwill, subject to the Data Processing Terms, ensure all necessary licences, approvals and consents have been given as required for the Transaction Data’s hosting, use, processing and other utilisation in connection with the Services in compliance with all laws and all third party Intellectual Property Rights; and\n\n###### 10.2 (b)\n\nhereby grants Taxamo, its Connected Parties and each of its third party service providers a royalty-free, non-exclusive, sub-licensable (including by multi-tier) licence to use, copy and otherwise utilise all Transaction Data (including, for example, metadata) to the extent necessary to provide the Services or exercise Taxamo’s rights under these Terms.\n\n\n#### 11.\tINTELLECTUAL PROPERTY\n\n##### 11.1\n\nAll Intellectual Property Rights in any know-how and computer software used or developed specifically by Taxamo  pursuant to, or in order to fulfil any of its obligations under these Terms, including but not limited to the Taxamo Platform, the Services Integration and the PC Tool will remain the sole property of Taxamo or its licensors and neither the Seller nor any Seller Affiliates will:\n\n###### 11.1 (a)\n\nunless otherwise expressly provided for in Clause 7 of these Terms, acquire any licence of; or\n\n###### 11.1 (b)\n\nright or claim to, or interest in,\nany such software or know-how either during or after the Service Term.\n\n##### 11.2\n\nThe Seller will take such action as Taxamo may reasonably require to protect or assist Taxamo in protecting Taxamo’s Intellectual Property Rights referred to in Clause 11.1 above.\n\n##### 11.3\n\nShould the Seller or any of the Seller’s Affiliates commence or assist in any legal or administrative proceedings which will or may constitute a claim inconsistent with the provisions of Clause 11.1, Taxamo will be entitled at any time thereafter to terminate these Terms automatically.\n\n#### 12. INDEMNIFICATION: THE SELLER'S ATTENTION IS PARTICULARLY DRAWN TO THIS CLAUSE\n\n##### 12.1\n\nThe Seller shall indemnify and hold harmless Taxamo and its Connected Parties (each a “**Taxamo Party**”) against all Losses (including but not limited to any direct, indirect or consequential losses, loss of profit, loss of reputation and all interest, penalties and legal costs (calculated on a full indemnity basis) and all other professional costs and expenses) suffered or incurred by a Taxamo Party arising out of or in connection with:\n\n###### 12.1 (a)\n\nany claim made against a Taxamo Party for actual or alleged infringement of a third party's rights (including, but not limited to, Intellectual Property Rights) arising out of or in connection with information supplied by the Seller (including the Transaction Data and the Products) under these Terms;\n\n###### 12.1 (b)\n\nany claim made against a Taxamo Party arising out of or in connection with the: (i) the supply of; or (ii) manufacture of or any defect in, the Products;\n\n###### 12.1 (c)\n\na Taxamo Party receiving any notice of claim or ruling from a Relevant Tax Authority, a court or tribunal or another similar body of any jurisdiction for the payment to it of any: (i) Tax liability related to an Excluded Transaction; or (ii) any outstanding Seller Tax liability;\n\n###### 12.1 (d)\n\nin the event that a Relevant Tax Authority, a court or tribunal or another similar body or authority determines that a Taxamo Party has a liability to pay a Tax where, under these Terms, the Seller had the liability to pay the Tax but has failed to pay same;\n\n###### 12.1 (e)\n\nany failure of the Seller to comply with the provisions of the Data Processing Terms (as they apply to the Seller) or Applicable DPT Laws (as defined in the Data Processing Terms) in respect of its processing of Personal Data; and\n\n###### 12.1 (f)\n\nthe Seller's breach or negligent performance or non-performance of these Terms, including, but not limited to, a failure to perform any Assure Service Dependencies.\n\n##### 12.2\n\nThe indemnities set out in Clause 12.1 above shall survive the termination, for any reason, of these Terms.\n\n#### 13. LIMITATIONS AND EXCLUSIONS OF LIABILITY: THE SELLER'S ATTENTION IS PARTICULARLY DRAWN TO THIS CLAUSE\n\n##### 13.1\n\nIf Taxamo's performance of any of its obligations under these Terms is prevented or delayed by any act or omission by the Seller or failure by the Seller to perform any relevant obligation (“**Seller Default**”):\n\n###### 13.1 (a)\n\nwithout limiting or affecting any other right or remedy available to it, Taxamo shall have the right to suspend performance of the Services until the Seller remedies the Seller Default, and to rely on the Seller Default to relieve it from the performance of any of its obligations in each case to the extent the Seller Default prevents or delays Taxamo's performance of any of its obligations;\n\n###### 13.1 (b)\n\nTaxamo shall not be liable for any Losses sustained or incurred by the Seller arising directly or indirectly from Taxamo's failure or delay to perform any of its obligations as set out in this Clause 13.1; and\n\n###### 13.1 (c)\n\nsubject to the Clause 12 (Indemnities), the Seller shall reimburse Taxamo on written demand for any Losses sustained or incurred by Taxamo arising directly or indirectly from the Seller Default.\n\n##### 13.2\n\nTaxamo shall not be liable to pay for any Loss suffered by a Seller: (i) to the extent that such liability is wholly or partly attributed to actions of any third party, with whom Taxamo has no contractual relationship or events or circumstances reasonably beyond the control of Taxamo; (ii) arising from failure by the Seller to correctly apply, interpret or implement Applicable Laws or for any failure by the Seller to comply with Applicable Laws; (iii) due to any change in interpretation of Applicable Laws including a change as a result of any ruling, decision or advice of a court, tribunal, EU or government agency or institution or Relevant Tax Authority in relation to Applicable Laws; or (iv) due to misuse of the Taxamo Platform by the Seller.\n\n##### 13.3\n\nExcept as expressly provided in these terms and conditions or section 12 of the Sale of Goods Act 1893, as amended by the Sale of Goods and Supply of Services Act 1980 (the 1980 Act), all conditions or warranties (express or implied, statutory or otherwise) are hereby excluded including, without limitation, any warranties implied by the Sale of Goods Act 1893 as amended by the 1980 Act (including for the avoidance of doubt, section 39 of the 1980 Act).\n\n##### 13.4\n\nTo the extent permitted by law: \n\n###### 13.4 (a)\n\nall terms, conditions, warranties, guarantees and other provisions which would otherwise be implied are expressly excluded by agreement; and\n\n###### 13.4 (b)\n\nexcept where Taxamo has breached an express term, warranty or undertaking in these Terms, Taxamo will not be liable to the Seller, its Connected Parties, its Buyers or any other third party for any Losses arising directly or indirectly from any breach of these Terms.\n\n##### 13.5\n\nNothing in this Clause 13 shall limit the Seller's payment obligations under these Terms.\n\n##### 13.6\n\nNothing in these Terms limits any liability which cannot legally be limited, including liability for:\n\n###### 13.6 (a)\n\ndeath or personal injury caused by negligence; and\n\n###### 13.6 (b)\n\nfraud or fraudulent misrepresentation.\n\n##### 13.7\n\nSubject to Clause 13.6, Taxamo will not be liable to the Seller, whether in contract, tort (including negligence), for breach of statutory duty, or otherwise, arising under or in connection with these Terms for:\n\n###### 13.7 (a)\n\nloss of profits;\n\n###### 13.7 (b)\n\nloss of sales or business;\n\n###### 13.7 (c)\n\nloss of agreements or contracts;\n\n###### 13.7 (d)\n\nloss of anticipated savings;\n\n###### 13.7 (e)\n\nloss of use or corruption of software, data or information;\n\n###### 13.7 (f)\n\nloss of or damage to goodwill; \n\n###### 13.7 (g)\n\nwasted costs; and\n\n###### 13.7 (h)\n\nany indirect or consequential loss.\n\n##### (a)\n\nSubject to Clause 13.2, Taxamo’s total liability to the Seller arising under or in connection with these Terms, whether in contract, tort (including negligence), breach of statutory duty, or otherwise, will be limited to 150% of the total Service Charges paid under these Terms in the 12 month period before the event giving rise to liability.\nIf the total Service Charges cannot be calculated accurately at the time the relevant liability is to be assessed (the “**Applicable Time**”), it will be calculated on a pro-rata basis as X/Y x Z. Where:\n\n- X = the Service Charges paid and payable to Taxamo under these Terms in the relevant Service Year before the Applicable Time;\n- Y = the number of days elapsed in the relevant Service Year before the Applicable Time; and\n- Z = 365.\n\n##### 13.8\n\nUnless the Seller notifies Taxamo that it intends to make a claim in respect of an event within the notice period, Taxamo shall have no liability for that event. The notice period for an event shall start on the day on which the Seller became, or ought reasonably to have become, aware of the event having occurred and shall expire 12 months from that date. The notice must be in writing and must identify the event and the grounds for the claim in reasonable detail.\n\n##### 13.9\n\nThis Clause 13 will survive termination of these Terms.\n\n##### 13.10\n\nIn circumstances where all or any portion of the provisions of this Clause 13 are finally determined to be unenforceable, the aggregate liability of one Party for any Losses incurred by the other Party arising out of, or in connection with, these Terms will not exceed an amount which is proportional to the relative fault that such Party’s conduct bears to all other conducts giving rise to such Losses.\n\n\n#### 14. CONFIDENTIALITY\n\n##### 14.1\n\n“**Confidential Information**” means all confidential information disclosed by a Party or its employees, officers, representatives or advisers (collectively the “**Representatives**”) to the other Party and that Party's Representatives on or after the Effective Date (and irrespective of how it is recorded or disclosed by the disclosing Party), which is identified as being confidential by the disclosing Party or which may reasonably be regarded as confidential by a reasonable business person, relating to the business, assets, finances, products, services, employees, customers, suppliers, plans, intentions,  market opportunities, operations, processes, know-how, designs, technical documentation and trade secrets of the disclosing Party or its Affiliates. \n\n##### 14.2\n\nThe provisions of this Clause will not apply to any Confidential Information that:\n\n###### 14.2 (a)\n\nis or becomes generally available to the public (other than as a result of its disclosure by the receiving Party or its Representatives in breach of this Clause); \n\n###### 14.2 (b)\n\nwas available to the receiving Party on a non-confidential basis before disclosure by the disclosing Party; \n\n###### 14.2 (c)\n\nwas, is or becomes available to the receiving Party on a non-confidential basis from a person who, to the receiving Party's knowledge, is not bound by a confidentiality agreement with the disclosing Party or otherwise prohibited from disclosing the information to the receiving Party; \n\n###### 14.2 (d)\n\nthe Parties agree in writing is not confidential or may be disclosed; or\n\n###### 14.2 (e)\n\nis developed by or for the receiving Party independently of the information disclosed by the disclosing Party.\n\n##### 14.3\n\nEach Party will keep the other Party's Confidential Information confidential and will not use such Confidential Information except to exercise or perform its rights and obligations under these Terms (the “**Permitted Purpose**”) or disclose such Confidential Information in whole or in part to any third party, except as expressly permitted by this Clause.\n\n##### 14.4\n\nA Party may disclose the other Party's Confidential Information to those of its Representatives who need to know such Confidential Information for the Permitted Purpose, provided that it informs such Representatives of the confidential nature of the Confidential Information and it procures that its Representatives will, in relation to any Confidential Information disclosed to them, comply with the obligations set out in this Clause. The disclosing Party will at all times be liable for the failure of any Representatives to comply with the obligations set out in this Clause. A Party may also disclose Confidential Information to the extent such Confidential Information is required to be disclosed by law or applicable regulations, by any governmental or other regulatory authority or by a court or other authority of competent jurisdiction provided that, to the extent it is legally permitted to do so, it gives the other Party as much notice of such disclosure as possible so that the other Party may seek a protective order or similar protection and the opportunity to limit the scope of such disclosure to the extent legally possible. \n\n##### 14.5\n\nEach Party reserves all rights in its Confidential Information. No rights or obligations in respect of a Party's Confidential Information other than those expressly stated in these Terms are granted to the other Party, or to be implied from these Terms.\n\n##### 14.6\n\nSubject to Clause 14.7 below, on termination or expiration of these Terms each Party will:\n\n###### 14.6 (a)\n\nreturn to the other Party all documents and materials (and any copies) containing, reflecting, incorporating or based on the other Party's Confidential Information;\n\n###### 14.6 (b)\n\nerase all the other Party's Confidential Information from computer and communications systems and devices used by it (to the extent technically practicable) provided that this obligation will not extend to the deletion of routine back-ups of data by either Party; and\n\n###### 14.6 (c)\n\ncertify in writing to the other Party that it has complied with the requirements of this Clause.\n\n##### 14.7\n\nA recipient Party may retain documents and materials containing, reflecting, incorporating or based on the other Party's Confidential Information to the extent required by law or regulations or any applicable governmental or regulatory authority or professional record-keeping requirements. The provisions of this Clause 14 will continue to apply to any such documents and materials retained by the recipient Party.\n\n##### 14.8\nThe provisions of this Clause 14 will continue to apply after termination or expiration of these Terms for a period of 3 years (“**Confidentiality Obligation Period**”) unless it is Confidential Information that: (i) may reasonably be considered a trade secret of the disclosing Party; or (ii) may reasonably be determined to be information that has retained its commercial value or sensitivity after the expiration of the Confidentiality Obligation Period, in which case the confidentiality obligations and restrictions set out in this Clause 14 will remain in full force and effect between the Parties after the termination of these Terms with respect to such Confidential Information.\n\n\n#### 15.\tTERMINATION\n\n##### 15.1\n\nWithout affecting any other right or remedy available to it, either Party may terminate these Terms with immediate effect by giving notice (in accordance with Clause 15) to the other Party if:\n\n###### 15.1 (a)\n\nthe other Party commits a material breach of any of these Terms and (if such breach is remediable) fails to remedy that breach within a period of 20 days after being notified (in accordance with Clause 16) to do so;\n\n###### 15.1 (b)\n\nthe other Party is unable to pay its debts or goes into compulsory or voluntary liquidation or has a receiver or administrator appointed over all or part of its assets.\n\n##### 15.2\n\nWithout affecting any other right or remedy available to it, Taxamo may terminate these Terms: \n\n###### 15.2 (a)\n\nwith immediate effect by giving written notice to the Seller if the Seller fails to pay any amount due under these Terms on the due date for payment or there is a change of control of the Seller;\n\n###### 15.2 (b)\n\nwith immediate effect by giving written notice to the Seller if it is determined by Taxamo and/or any relevant authority that the Services or any part of the Services are not complaint with any Applicable Laws; and  \n\n###### 15.2 (c)\n\nat any time by serving not less than 20 days’ prior written notice to the Seller.\n\n##### 15.3\n\nWithout affecting any other right or remedy available to it, the Seller may terminate these Terms with immediate effect by giving written notice to the Taxamo if the Seller has not used the Assure Services within 180 days of the Effective Date.\n\n##### 15.4\n\nOn termination of these Terms:\n\n###### 15.4 (a)\n\nthe Seller shall immediately settle all outstanding Assure Payments, including any accrued interest;\n\n###### 15.4 (b)\n\nthe Seller shall return all Taxamo Materials to Taxamo.\n\n##### 15.5\n\nAny provision of these Terms that expressly or by implication is intended to come into or continue in force on or after termination or expiry of these Terms will remain in full force and effect.\n\n##### 15.6\n\nTermination or expiry of these Terms will not affect any rights, remedies, obligations or liabilities of the Parties that have accrued up to the date of termination or expiry, including the right to claim damages in respect of any breach of these Terms which existed at or before the date of termination or expiry.\n\n#### 16. NOTICES\n\n##### 16.1\n\nTaxamo may provide any notice to the Seller by: (a) sending an email to the email address provided by the Seller during the Services Acceptance Process (“**Notification Email Address**”) or by (b) posting a notice in the Dashboard. \n\n##### 16.2\n\nThe Seller may provide notice to Google by sending an email to [legal@taxamo.com](mailto:legal@taxamo.com). \n\n##### 16.3\n\nNotice will be treated as received when: (i) the email is sent by one Party, whether or not the other Party has received the email; or (ii) notice is posted in the Dashboard. The Seller is responsible for keeping its Notification Email Address current throughout the Term.\n\n##### 16.4\nThis clause 16 does not apply to the service of any proceedings or other documents in any legal action or, where applicable, any other method of dispute resolution.\n\n#### 17. FORCE MAJEURE\n\n##### 17.1\n\nWith the exception of the payment of Assure Payments and any Non-Assure Charges, if a Party is prevented, hindered or delayed in or from performing any of its obligations under these Terms by a Force Majeure Event (“**Affected Party**”), the Affected Party will not be in breach of these Terms or otherwise liable for any such failure or delay in the performance of such obligations. The time for performance of such obligations will be extended accordingly.\n\n##### 17.2\n\nThe corresponding obligations of the other Party will be suspended, and its time for performance of such obligations extended, to the same extent as those of the Affected Party.\n\n##### 17.3\n\nThe Affected Party will:\n\n###### 17.3 (a)\n\nas soon as reasonably practicable after the start of the Force Majeure Event but no later than 15 (fifteen) days from its start, notify the other Party in writing of the Force Majeure Event, the date on which it started, its likely or potential duration, and the effect of the Force Majeure Event on its ability to perform any of its obligations under these Terms; and\n\n###### 17.3 (b)\n\nuse all reasonable endeavours to mitigate the effect of the Force Majeure Event on the performance of its obligations.\n\n##### 17.4\n\nIf the Force Majeure Event prevents, hinders or delays the Affected Party's performance of its obligations for a continuous period of more than 30 days, the Party not affected by the Force Majeure Event may terminate these Terms by 14 days prior written notice to the Affected Party.\n\n#### 18. WAIVER\n\nNo failure or delay by a Party to exercise any right or remedy provided under these Terms or by law will constitute a waiver of that or any other right or remedy, nor will it prevent or restrict the further exercise of that or any other right or remedy. No single or partial exercise of such right or remedy will prevent or restrict the further exercise of that or any other right or remedy.\n\n\n#### 19. GENERAL \n\n##### 19.1\n\nNeither Party will have the authority to make any agreement or commitment or incur any liability on behalf of the other Party and neither Party will be liable for any acts, omissions, agreements, commitments, promises or representations made by the other Party except as otherwise specifically provided herein.\n\n##### 19.2\n\nIf any provision of these Terms will be found by any court or administrative body of competent jurisdiction to be invalid or unenforceable the invalidity or unenforceability of such provision will not affect the other provisions of these Terms and all provisions not affected by such invalidity or unenforceability will remain in full force and effect. The Parties hereby agree to attempt to substitute for any invalid or unenforceable provision a valid or enforceable provision which achieves to the greatest extent possible the economic legal and commercial objectives of the invalid or unenforceable provision. \n\n##### 19.3\n\nEach Party agrees that it will have no claim for innocent or negligent misrepresentation or negligent misstatement based on any statement in these Terms. \n\n##### 19.4\n\nThese Terms will be binding upon and inure for the benefit of the successors in title of the Parties hereto.\n\n##### 19.5\n\nTaxamo may at any time assign, mortgage, charge, subcontract, delegate, declare a trust over or deal in any other manner with any or all of its rights and obligations under these Terms. The Seller shall not assign, transfer, mortgage, charge, subcontract, delegate, declare a trust over or deal in any other manner with any of its rights and obligations under these Terms.\n\n##### 19.6\n\nIn these Terms, references to any statute or regulations means such statute or regulations as amended at the time and include any successor legislation or regulations.  The headings contained herein are for convenience of reference and will not affect the meaning or interpretation of these Terms.  Unless the context clearly indicates otherwise, the word “including” when used in these Terms means “including but not limited to” and the words “hereof”, “herein”, and “hereunder” and words of similar import, when used in these Terms, will refer to these Terms as a whole and not to any particular provision of these Terms. \n\n##### 19.7\n\nSave as otherwise provided in these Terms, a Person who is not a party to these Terms has no right to enforce any term of these Terms. \n\n##### 19.8\n\nNothing in these Terms is intended to, or shall be deemed to, establish any partnership or joint venture between the Parties, constitute any Party being the agent of the other Party, or authorise any Party to make or enter into any commitments for or on behalf of any other Party except: (i) as otherwise expressly agreed by the Parties; and (ii) as reasonably required to provide the Services.\n\n#### 20. LAW AND JURISDICTION\n\nThese Terms, and any dispute or claim (including non-contractual disputes or claims) arising out of or in connection with it or its subject matter or formation, will be governed by and construed in accordance with the laws of Ireland and subject to the exclusive jurisdiction of the Irish courts.\n\n#### 21. DEFINITIONS\n\nUnless as otherwise defined in these Terms, the following terms shall have the following meanings:\n\n**“Affiliate”** means, when used with reference to a specific Person, any Person that, directly or indirectly, or through one or more intermediaries, owns or controls, is owned or controlled by, or is under common ownership or common control with, such Person.  As used herein, “control” means the power to direct the management or affairs of a Person and “ownership” means the beneficial ownership of more than 50% of the voting equity securities of the Person. \n\n**“Applicable Laws”** means all applicable laws, rules and regulations including, but not limited to, Applicable VAT Laws.\n\n**“Applicable SOL Period”** means the applicable statute of limitations period to may apply to a Transaction under any Applicable Law and any agreed or imposed extension to the such period.\n\n**“Applicable VAT Laws”** means the Applicable Laws in a Territory governing VAT.\n\n**“Assure Payment”** means each of the Assure VAT Amount, the Assure Transaction Charge, an Additional Assure Tax Amount and the Assure Refund Charge (together the “**Assure Payments**”)\n\n**“Assure Transaction”** means the sale:\n\n- of Products sold in a consignment to the value of €150 or less by the Qualifying Seller on the Seller Platform;\n- to a Qualifying Buyer located in the EU at the point of sale; and\n- through the Taxamo Platform.\n\n**“Assure Transaction Charge”** means the GBP2.00 fee (exclusive of VAT) charged by Taxamo for each Assure Transaction.\n\n**“Buyer”** means the buyer of a Product who is located in a Territory.\n\n**“Checkout”** means the point at which a Buyer is prompted to pay for a Transaction on the Seller Platform.\n\n**“Connected Parties”** means a Party’s directors, officers, employees, agents and/or Affiliates.\n\n**“Dashboard”** Taxamo’s dashboard.\n\n**“Designated Users”** is as defined in the Dashboard Terms of Use.\n\n**“Expenses”** means any and all expenses incurred in connection with investigating, defending or asserting any claim, action, suit or proceeding incident to any matter indemnified against hereunder (including, without limitation, court filing fees, court costs, arbitration fees or costs, witness fees and reasonable fees and expenses of legal counsel, investigators, expert witnesses, consultants, accountants and other professionals).\n\n**“Force Majeure Event”** means any circumstance not within a Party's reasonable control including, without limitation: \n\n(i)\tacts of God, flood, drought, earthquake or other natural disaster;\n\n(ii)\tepidemic or pandemic;\n\n(iii)\tterrorist attack, civil war, civil commotion or riots, war, threat of or preparation for war, armed conflict, imposition of sanctions, embargo, or breaking off of diplomatic relations;\n\n(iv)\tnuclear, chemical or biological contamination or sonic boom;\n\n(v)\tany law or any action taken by a government or public authority, including without limitation imposing an export or import restriction, quota or prohibition, or failing to grant a necessary licence or consent;\n\n(vi)\tcollapse of buildings, fire, explosion or accident; \n\n(vii)\tany labour or trade dispute, strikes, industrial action or lockouts; \n\n(viii)\tnon-performance by suppliers or subcontractors (other than by companies in the same group as the Party seeking to rely on a Force Majeure Event);\n\n(ix)\tinterruption or failure of utility service; or\n\n(x)\ta change in Applicable Law that renders the provision of the Services unlawful or impermissible.\n\n**“Harmonized Commodity Description and Coding System”** means the system established by the International Convention on the Harmonized Description and Coding System signed at Brussels on 14 June 1983 (as amended).\n\n**“Initial Term”** means the twelve month period commencing on the Service Commencement Date. \n\n**“Intellectual Property Rights”** means any patents, utility models, rights to inventions, copyright and neighbouring and related rights, moral rights, trademarks and service marks, business names and domain names, rights in get-up and trade dress, goodwill and the right to sue for passing off or unfair competition, rights in designs, rights in computer software, database rights, rights to use, and protect the confidentiality of, confidential information (including know-how and trade secrets) and all other intellectual property rights, in each case whether registered or unregistered and including all applications and rights to apply for and be granted, renewals or extensions of, and rights to claim priority from, such rights and all similar or equivalent rights or forms of protection which subsist or will subsist now or in the future in any part of the world.\n\n**“IOSS Number”** means Taxamo’s Import One-Stop Shop VAT identification number.\n\n**“Losses”** means any and all losses, costs, obligations, liabilities, settlement payments, awards, judgments, fines, penalties, damages, deficiencies, Expenses or other charges.\n\n**“Non-Natural Person”** means a Person other than an individual in its personal capacity.\n\n**“PC Tool”** means the Product Classification software application provided by Taxamo via a portal on the Taxamo Platform.\n\n**“Person”** means any general partnership, limited partnership, corporation, limited liability company, joint venture, trust, business trust, governmental agency, cooperative, association, sole trader, individual or other entity, and the heirs, executors, administrators, legal representatives, successors and assigns of such Person as the context may require.\n\n**“Personal Data”** is defined in the Data Processing Terms.\n\n**“Postal Carrier”** means the Seller’s third party postal carrier or shipping solution provider that is instructed to import the Products into the Territory on the Seller’s behalf.\n\n**“Products”** means the Seller’s physical goods that are located outside the Territory.\n\n**“Product Classification”** means a tariff classification for a Product in accordance with the Harmonized Commodity Description and Coding System.\n\n**“Product Classification Service”** means Taxamo’s Product Classification service.\n\n**“Qualifying Buyer”** means a Buyer who is deemed to be a consumer under Applicable VAT Law.\n\n**“Qualifying Seller”** means the Seller, subject to it being located outside of the European Union and Northern Ireland.\n\n**“Refund”** means a reimbursement to a Seller of an Assure VAT Amount that the Seller has refunded to the Buyer for an Assure Transaction.\n\n**“Relevant Tax Authority”** means the applicable national tax authority in a Territory.\n\n**“Seller Payment Method”** means the payment method used by the Seller and supported by the Taxamo Platform for the purpose of settling the Seller’s payment obligations under these Terms, which may include credit card payments, debit card payments and/or direct debit payments.\n\n**“Seller Platform”** means the Seller’s electronic platform that is used by Buyers to purchase Products.\n\n**“Seller Taxes”** means any Taxes related to a Transaction and/or the Services that a either Party is or is deemed to be responsible and/or liable for under Applicable Tax Laws including, but not limited to, Additional Assure Taxes, VAT on Assure Charges and Taxes related to Excluded Transactions but excluding Assure Tax.\n\n**“Service Commencement Date”** means the date of the first Transaction..\n\n**“Service Term”** means the Initial Term and any subsequent Renewal Term(s).\n\n**“Service Year”** a period of one calendar year starting on the Service Commencement Date or the relevant anniversary of the Service Commencement Date (as appropriate).\n\n**“Services Acceptance Process”** means the process of accepting these Terms, which includes the provision of the Seller’s registered company details and the confirmation of the acceptance of these Terms.\n\n**“Service Charges”** means: (i) the Assure Transaction Charge; (ii) the Assure Refund Charges; and (iii) other other changes that Taxamo may charge the Seller from time to time for the provision of the Services (the “**Non-Assure Charges**”).\n\n**“Services Integration”** means the integration of the Taxamo Platform with the Seller Platform through the Taxamo API for the purpose of Taxamo providing the Services to the Seller.\n\n**“Tax Document”** means: (i) an Invoice; or (ii) a credit note that relates to Refund.\n\n**“Tax/Taxes”** means any and all applicable taxes, including but not limited indirect tax or withholding tax.\n\n**“Taxamo API”** means Taxamo’s application programming interface that is integrated with the Seller Platform for the purpose of providing the Services.\n\n**“Taxamo Platform”** means Taxamo’s proprietary electronic platform that: (i) comprises of interlinked technology components including the Dashboard and the Taxamo API.\n\n**“Taxamo Business Hours”** means 09:00 to 17:00 Irish time Monday to Friday (including public holidays and bank holidays.\n\n**“Territory”** means the European Union. \n\n**“Third Party Service Provider”** means a third party with whom Taxamo has contracted to provide certain elements of the Services.\n\n**“Transaction”** means the sale of a Product(s) to a Buyer via the Seller Platform that is subject to the Services.\n\n**“Transaction Data”** means the particulars of a Transaction required by Taxamo to provide the Services, as set out in Taxamo’s [Technical Documentation](https://docs.assure.taxamo.com/reference).\n\n**“VAT”** means value added tax.\n\n\n### DASHBOARD TERMS OF USE\n\nEach Seller Connected Party who is: (i) authorised by the Seller to have access to the Dashboard; and/or (ii) who has been presented to Taxamo by the Seller for such authorisation (each a “**Designated User**”) will be issued a unique user identification code and password or any other piece of information (the “**Log-in Details**”) to access the Dashboard.   \n\nIn relation to the Seller’s use of the Dashboard, the Seller shall not, and shall procure that the Designated Users shall not: \n\n- store, distribute or transmit any virus, or any material that is unlawful, harmful, threatening, defamatory, obscene, infringing, harassing, offensive, discriminatory or facilitates illegal activity; \n- except as may be permitted by applicable law which is incapable of exclusion by agreement between the Parties: (i) attempt to copy, modify, duplicate, create derivative works from, frame, mirror, republish, download, display, transmit, or distribute all or any portion of the Testing Software in any form or media or by any means; or (ii) attempt to reverse compile, disassemble, reverse engineer or otherwise reduce to human-perceivable form all or any part of the Dashboard; \n- allow any access to, or use of, the Dashboard by any person who is not a Designated User and it shall notify Taxamo promptly of any such unauthorised access or use;\n- use or access all or any part of the Dashboard in order to build a product or service which competes with Taxamo;\n- sell, rent, lease, transfer, assign, distribute, display, disclose, provide services to or otherwise commercially exploit or otherwise make the Dashboard available to any third party; or\n- use, or permit any third parties to use, the Dashboard in a way that interferes with or disrupts any of Taxamo’s other users, systems services or equipment (or those of Taxamo’s IT providers).\n\nThe Seller shall and procures that the Designated Users shall:\n\n- access and use the Dashboard only for the purpose of receiving the Services and strictly in accordance with the terms of these Terms; and\n- keep the Log-In Details secure and confidential, and notify Taxamo immediately of any unauthorized use of any Log-In Details or any other known or suspected breach of security or obligations under these Terms.\n\nThe Seller shall comply with the provisions of these Terms and shall procure that the Designated Users shall also comply. All acts or omissions of the Designated Users relating to the matters described in these Terms shall be deemed the Sellers acts or omissions.\n\nThe Seller acknowledges and agrees that:\n\n- its and the Designated Users’ use of and access to the Dashboard will automatically cease when these Terms terminates or expires;\n- Taxamo has the right to disable any of the Log-in Details at any time if in Taxamo’s reasonable opinion any of the Designated Users have failed to comply with any of the provisions of these terms of use;\n- Taxamo will not be liable for any Losses suffered by the Seller or any other third party as a result of a Designated User’s access to the Dashboard; and\n- it is solely responsible for any Losses incurred by the Seller, Taxamo or any third party as a result of a breach of these terms of use by the Seller and/or its Designated Users.\n\n### DATA PROCESSING TERMS\n\n#### 1.\tDefinitions\n\nThe following definitions apply to these Data Processing Terms and if used elsewhere in these Terms (all other defined terms in this schedule will have the meaning given to them in these Terms):\n\n**“Controller”, “Processor”, “Data Subject”, “Personal Data”, “Personal Data Breach”, “process” (and its derivatives) and “appropriate technical and organisational measures”** have the meaning ascribed to them in the GDPR.\n\n**“Applicable DPT Laws”** means the law of the European Union, the law of any member state of the European Union, Domestic Irish Law and the UK GDPR.\n\n**“Data Protection Laws”** means Applicable DPT Laws and any other European Union legislation relating to personal data and all other legislation and regulatory requirements in force from time to time, which apply to a Party relating to the processing of Personal Data (including, without limitation, the privacy of electronic communications). \n\n**“Domestic Irish Law”** means the Irish data protection legislation (including but not limited to the Irish Data Protection Act, 1988 to 2018) and any other law that applies in the Republic of Ireland.\n\n**“GDPR”** means General Data Protection Regulation (EU) 2016/679.\n\n**“UK GDPR”** has the meaning given to it in section 3(10) (as supplemented by section 205(4)) of the Data Protection Act 2018.\n\n#### 2. DATA PROTECTION\n\n##### 2.1\n\nBoth Parties will comply with all applicable requirements of the Data Protection Laws. These Data Processing Terms are in addition to and do not relieve, remove or replace, a Party's obligations or rights under the Data Protection Laws. The Parties acknowledge that for the purposes of these Data Processing Terms and the Data Protection Laws, the Seller is the Controller and Taxamo is the Processor. Paragraph 2.5 (Processing Details) below sets out the nature and purpose of processing by Taxamo, the duration of the processing and the types of Personal Data and categories of Data Subject.\n\n##### 2.2\n\nWithout prejudice to the generality of paragraph 2.1, the Seller will ensure that it has all necessary appropriate consents and notices in place to enable lawful transfer of the Personal Data to Taxamo for the duration and purposes of these Terms.\n\n##### 2.3\n\nWithout prejudice to the generality of paragraph 2.1, Taxamo will, in relation to any Personal Data processed in connection with the performance by Taxamo of its obligations under these Terms:\n\n###### 2.3 (a)\n\nprocess that Personal Data in provision of the Services in accordance with the terms of these Terms unless Taxamo is required by Applicable DPT Laws to otherwise process that Personal Data. Where Taxamo is relying on Applicable DPT Laws as the basis for processing Personal Data, Taxamo will promptly notify the Seller of this before performing the processing required by the Applicable DPT Laws unless those Applicable DPT Laws prohibit Taxamo from so notifying the Seller;\n\n###### 2.3 (b)\n\nhave in place appropriate technical and organisational measures which ensure a level of security appropriate to the risk as are required to comply with the data security obligations under the Data Protection Laws; \n\n###### 2.3 (c)\n\nensure that all personnel who have access to and/or process Personal Data are obliged to keep the Personal Data confidential; and\n\n###### 2.3 (d)\n\nnot transfer any Personal Data outside of the European Economic Area unless the following conditions are fulfilled:\n\n(i)\tthe Seller or Taxamo has provided appropriate safeguards in relation to the transfer, including, but not limited to, the Seller or Taxamo entering into standard contractual clauses (as the data exporter) with the applicable data importer; and\n\n(ii)\tthe data subject has enforceable rights and effective legal remedies;\n\n\n###### 2.3 (e)\n\nassist the Seller, at the Seller's cost, in responding to any request from a Data Subject and in ensuring compliance with its obligations under the Data Protection Laws with respect to security, breach notifications, impact assessments and consultations with supervisory authorities or regulators;\n\n###### 2.3 (f)\n\nnotify the Seller without undue delay on becoming aware of a Personal Data Breach;\n\n###### 2.3 (g)\n\nat the written direction of the Seller, delete or return Personal Data and copies thereof to the Seller after the termination or expiration of these Terms unless required by Applicable DPT Laws to store the Personal Data; and\n\n###### 2.3 (h)\n\nmaintain complete and accurate records and information to demonstrate its compliance with Data Processing Terms (“**DPT Compliance Information**”) and, where so requested by the Seller in writing, make available to the Seller all DPT Compliance Information. Where Taxamo has not provided reasonable evidence of its compliance with these Data Processing Terms then the Seller will be entitled to conduct a physical audit of Taxamo and its processing of the Personal Data provided that: (i) such audit is conducted during normal business hours during the course of one business day; (ii) the Seller does not conduct more than one such audit in any Service Year; and (iii) the costs associated with conducting such an audit are to be solely borne by the Seller.\n\n##### 2.4\n\nThe Seller consents to Taxamo appointing third-party processors of Personal Data under these Terms subject to such third party processors having entered into  data processing terms with Taxamo that reflect the requirements of the Data Protection Laws. As between the Seller and Taxamo, Taxamo shall remain fully liable for all acts or omissions of any third-party processor appointed by it pursuant to this paragraph 2.4.\n\n##### 2.5 Processing Details\n\n| | |\n|---|---|\n| **Subject matter of Processing** | The provision by Taxamo of the Services |\n| **Duration of Processing** | The duration required to fulfil Taxamo’s obligations under these Terms. |\n| **Nature of processing e.g. means of processing** | Collection, storage, processing and transfer of the Personal Data in accordance with the terms of these Terms. |\n| **Purpose of Processing** | The provision by Taxamo of Services, as defined in these Terms.   |\n| **Categories of  Data Subjects** | Such categories as may be required to fulfil Taxamo’s obligations under these Terms. |\n| **Type of Personal Data (including special categories of Personal Data)** | Such types of Personal Data as may be required to fulfil Taxamo’s obligations under these Terms, including Personal Data of the Buyers used in Transactions. |\n",
+						"version": "v04-06-2021"
+					},
+					"sources_of_referral": [
+						{
+							"value": "bpost",
+							"label": "BPost"
+						},
+						{
+							"value": "deutsche-post",
+							"label": "Deutsche Post"
+						},
+						{
+							"value": "dhl-express",
+							"label": "DHL Express"
+						},
+						{
+							"value": "dpd",
+							"label": "DPD"
+						},
+						{
+							"value": "global-freight-solutions",
+							"label": "Global Freight Solutions (GFS)"
+						},
+						{
+							"value": "guernsey-post-service",
+							"label": "Guernsey Post Limited"
+						},
+						{
+							"value": "landmark-uk",
+							"label": "Landmark UK"
+						},
+						{
+							"value": "landmark-international",
+							"label": "Landmark International"
+						},
+						{
+							"value": "parcelforce",
+							"label": "Parcelforce"
+						},
+						{
+							"value": "parcelhub",
+							"label": "Parcelhub"
+						},
+						{
+							"value": "relativity",
+							"label": "Relativity"
+						},
+						{
+							"value": "royal-mail-group",
+							"label": "Royal Mail Group"
+						},
+						{
+							"value": "singpost",
+							"label": "Singapore Post"
+						},
+						{
+							"value": "whistl",
+							"label": "Whistl"
+						},
+						{
+							"value": "other",
+							"label": "Other"
+						}
+					],
+					"registration_location_restrictions": {
+						"restriction_message": "At the moment, we are only accepting sign-ups from United Kingdom (UK) established businesses.",
+						"allowed_countries": [
+							"GB"
+						]
+					},
+					"activation_email": {
+						"subject": "Taxamo Assure Contract and Account Activation Link",
+						"template_html": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n  <body>\n    <table\n      align=\"center\"\n      border=\"0\"\n      cellpadding=\"0\"\n      cellspacing=\"0\"\n      height=\"100%\"\n      width=\"100%\"\n      style=\"\n        border-collapse: collapse;\n        height: 100%;\n        margin: 0;\n        padding: 0;\n        width: 100%;\n        background-color: #fafafa;\n      \"\n    >\n      <tbody>\n        <tr>\n          <td\n            align=\"center\"\n            valign=\"top\"\n            style=\"\n              height: 100%;\n              margin: 0;\n              padding: 10px;\n              width: 100%;\n              border-top: 0;\n            \"\n          >\n            <table\n              border=\"0\"\n              cellpadding=\"0\"\n              cellspacing=\"0\"\n              width=\"100%\"\n              style=\"\n                border-collapse: collapse;\n                border: 0;\n                max-width: 600px !important;\n              \"\n            >\n              <tbody>\n                <tr>\n                  <td\n                    valign=\"top\"\n                    style=\"\n                      background-color: #ffffff;\n                      border-top: 0;\n                      border-bottom: 2px solid #eaeaea;\n                      padding-top: 10px;\n                      padding-bottom: 9px;\n                    \"\n                  >\n                    <table\n                      border=\"0\"\n                      cellpadding=\"0\"\n                      cellspacing=\"0\"\n                      width=\"100%\"\n                      style=\"min-width: 100%; border-collapse: collapse\"\n                    >\n                      <tbody>\n                        <tr>\n                          <td valign=\"top\" style=\"padding-top: 9px\">\n                            <table\n                              align=\"left\"\n                              border=\"0\"\n                              cellpadding=\"0\"\n                              cellspacing=\"0\"\n                              style=\"\n                                max-width: 100%;\n                                min-width: 100%;\n                                border-collapse: collapse;\n                              \"\n                              width=\"100%\"\n                            >\n                              <tbody>\n                                <tr>\n                                  <td\n                                    valign=\"top\"\n                                    style=\"\n                                      padding: 0px 18px 9px;\n                                      font-family: Arial, 'Helvetica Neue',\n                                        Helvetica, sans-serif;\n                                      font-size: 13px;\n                                      word-break: break-word;\n                                      color: #202020;\n                                      line-height: 150%;\n                                      text-align: left;\n                                    \"\n                                  >\n                                    <h2\n                                      style=\"\n                                        display: block;\n                                        margin: 0;\n                                        padding: 0;\n                                        color: #202020;\n                                        font-family: Helvetica;\n                                        font-size: 22px;\n                                        font-style: normal;\n                                        font-weight: bold;\n                                        line-height: 125%;\n                                        letter-spacing: normal;\n                                        text-align: left;\n                                      \"\n                                    >\n                                      Thank you for signing up with Taxamo Assure!\n                                    </h2>\n\n                                    <p\n                                      style=\"\n                                        font-family: Arial, 'Helvetica Neue',\n                                          Helvetica, sans-serif;\n                                        font-size: 13px;\n                                        margin: 10px 0;\n                                        padding: 0;\n                                        color: #202020;\n                                        line-height: 150%;\n                                        text-align: left;\n                                      \"\n                                    >\n                                      To complete your\n                                      <span class=\"il\">registration</span> and\n                                      set-up your access password, please click\n                                      on the button below:<br />\n                                    </p>\n                                    <p\n                                      style=\"\n                                        padding: 10px 0;\n                                      \"\n                                    >\n                                      <a\n                                        style=\"\n                                          text-decoration: none;\n                                          background-color: #136ca4;\n                                          margin-left: 0px;\n                                          padding: 10px 20px;\n                                          color: #fff;\n                                          text-transform: uppercase;\n                                          font-weight: bold;\n                                          font-size: 13px;\n                                        \"\n                                        href=\"{{activation-url}}\"\n                                        >Complete registration</a\n                                      >\n                                    </p>\n\n                                    <p\n                                      style=\"\n                                        font-family: Arial, 'Helvetica Neue',\n                                          Helvetica, sans-serif;\n                                        font-size: 13px;\n                                        margin: 10px 0;\n                                        padding: 0;\n                                        color: #202020;\n                                        line-height: 150%;\n                                        text-align: left;\n                                      \"\n                                    >\n                                      Once you have set-up your password you\n                                      will have immediate access to the Taxamo\n                                      Dashboard.\n                                      <br />\n                                      <br />\n                                      Please find attached a copy of the Terms of Service you accepted\n                                      on {{contract-accepted-at-human-readable}} for your records.\n                                      <br />\n                                      <br />\n                                      Looking forward to working with you,<br />\n                                      <strong>Your Taxamo team</strong>\n                                    </p>\n\n                                    <div style=\"text-align: left\">\n                                      <a\n                                        href=\"https://www.taxamo.com\"\n                                        style=\"\n                                          color: #a6a6a5;\n                                          text-decoration: none;\n                                          font-weight: normal;\n                                        \"\n                                        target=\"_blank\"\n                                        data-saferedirecturl=\"https://www.google.com/url?hl=en&amp;q=https://www.taxamo.com&amp;source=gmail&amp;ust=1472292147565000&amp;usg=AFQjCNFCBc0o-n9t6ktH0LdWfXuf64O_hQ\"\n                                        >www.taxamo.com</a\n                                      >\n                                    </div>\n                                  </td>\n                                </tr>\n                              </tbody>\n                            </table>\n                          </td>\n                        </tr>\n                      </tbody>\n                    </table>\n                  </td>\n                </tr>\n                <tr>\n                  <td\n                    valign=\"top\"\n                    style=\"\n                      background-color: #fafafa;\n                      border-top: 0;\n                      border-bottom: 0;\n                      padding-top: 9px;\n                      padding-bottom: 9px;\n                    \"\n                  ></td>\n                </tr>\n              </tbody>\n            </table>\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </body>\n</html>\n",
+						"template_text": "Thank you for signing up with Taxamo Assure!\n\nTo complete your registration and set-up your access password, please visit this address: \n\n{{activation-url}}\n\nOnce you have set-up your password you will have immediate access to the Taxamo dashboard.\n\nPlease find attached a copy of the Terms of Service you accepted on {{contract-accepted-at-human-readable}} for your records.\n\nLooking forward to working with you,\n\nYour Taxamo team\n\nwww.taxamo.com",
+						"contract_attachment_file_name": "Assure - Terms of Service"
+					}
+				},
+				"seller_billing_providers": {
+					"chargebee": {
+						"site_id": "taxamomarketplace-test",
+						"username": "AQICAHhRAtUOtQS1FIj96jyuvBqvdjcLiV9gsZE37vfP1pVkywGsmWLl2bgNul8etYGr9cp0AAAAhTCBggYJKoZIhvcNAQcGoHUwcwIBADBuBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDFKx9ltJcP3iKchVSwIBEIBBl1OA0+BHo7jKpgOezJ2UJcW4b3GgAdDagIIDxKCh29jUkZr3aHkxkSgBBIS+9rvXnxaqGIIc9qekTqkxzAXuY3w=",
+						"plan_id": "zero_amount_plan-EUR-Daily",
+						"customer_id_format": "uat-seller-%d",
+						"subscription_id_format": "uat-seller-%d"
+					}
+				},
+				"seller_billing": {
+					"taxamo_enterprise_create_transaction_url": "https://api.taxamo.com/api/v2/transactions",
+					"taxamo_enterprise_validate_tax_number_url": "https://api.taxamo.com/api/v2/tax/vat_numbers/:tax-number/validate",
+					"taxamo_enterprise_merchant_private_token": "AQICAHhRAtUOtQS1FIj96jyuvBqvdjcLiV9gsZE37vfP1pVkywGsKj87/l6mDy3UBngPHKGFAAAAljCBkwYJKoZIhvcNAQcGoIGFMIGCAgEAMH0GCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMNUbThqTUCeQXQwWNAgEQgFCQhz90wivqr04VxKBnPuQuBHzaE0Cjd6VhkYUQl2DQhVk/Z/wVvt2kaB3E/KQGpwclDJeEGWwsj1DYG8LEX31sMTlx/ySizFZH06ilTaaMMA=="
+				},
+				"oseries": {
+					"client_id": "marketplaceQA1",
+					"client_secret_arn": "arn:aws:secretsmanager:eu-west-1:539543036863:secret:qa-oseries-client-secret-1jdEPb",
+					"client_secret_version_id": "6e7460cf-2f44-466f-95d4-f51c848d0b4d",
+					"client_scope": "calc-rest-api",
+					"auth_url": "https://qaauth.vertexsmb.com/identity/connect/token",
+					"calc_url": "https://qaconnect.vertexsmb.com/vertex-ws/v2/supplies",
+					"use_caching": false,
+					"supported_cn_codes": [
+						"1022110000",
+						"01022110000",
+						"10229104000",
+						"1212210000",
+						"4910000000",
+						"18063100000",
+						"1806310000",
+						"2106909260",
+						"21069092601",
+						"21069092609",
+						"3006500000",
+						"4901100000",
+						"49011000009",
+						"4901990000",
+						"49019900000",
+						"49019900009",
+						"4902900000",
+						"49029000009",
+						"4903000000",
+						"49030000009",
+						"4904000000",
+						"49040000009",
+						"49010000000",
+						"4911990000",
+						"9202908000",
+						"9701900000",
+						"97019000000",
+						"4905200000",
+						"4905900090",
+						"49059000900",
+						"49052000000"
+					],
+					"auth_url": "https://qaauth.vertexsmb.com/identity/connect/token"
+				}
+			}
+		}
+	],
+	"admin_custom_rules": [
+		{
+			"name": "flat-fee",
+			"condition": [
+				"and",
+				[
+					"=",
+					[
+						"get-in",
+						"transaction-line",
+						"special-tax-scheme"
+					],
+					"IOSS"
+				],
+				[
+					"=",
+					[
+						"get-in",
+						"transaction-line",
+						"tax-liability-owner-code"
+					],
+					[
+						"get-in",
+						"platform-data",
+						"code"
+					]
+				],
+				[
+					"not",
+					[
+						"get-in",
+						"flat-fees",
+						[
+							"get-in",
+							"seller-data",
+							"merchant-code"
+						]
+					]
+				]
+			],
+			"effect": [
+				"->",
+				[
+					"conj-in",
+					"transaction-data",
+					"fees",
+					[
+						"key-value-map",
+						"rule",
+						[
+							"get-in",
+							"_rule",
+							"name"
+						],
+						"type",
+						"amount-fee",
+						"amount",
+						[
+							"key-value-map",
+							"amount",
+							2,
+							"currency-code",
+							"EUR"
+						],
+						"seller-code",
+						[
+							"get-in",
+							"seller-data",
+							"merchant-code"
+						]
+					]
+				],
+				[
+					"assoc-in",
+					"flat-fees",
+					[
+						"get-in",
+						"seller-data",
+						"merchant-code"
+					],
+					true
+				]
+			],
+			"scope": "transaction-line"
+		},
+		{
+			"name": "tax-fee",
+			"condition": [
+				"and",
+				[
+					"=",
+					[
+						"get-in",
+						"transaction-line",
+						"special-tax-scheme"
+					],
+					"IOSS"
+				],
+				[
+					"get-in",
+					"transaction-line",
+					"tax-amount"
+				],
+				[
+					"=",
+					[
+						"get-in",
+						"transaction-line",
+						"tax-liability-owner-code"
+					],
+					[
+						"get-in",
+						"platform-data",
+						"code"
+					]
+				]
+			],
+			"effect": [
+				"->",
+				[
+					"conj-in",
+					"transaction-line",
+					"fees",
+					[
+						"key-value-map",
+						"rule",
+						[
+							"get-in",
+							"_rule",
+							"name"
+						],
+						"type",
+						"tax-fee",
+						"amount",
+						[
+							"key-value-map",
+							"amount",
+							[
+								"get-in",
+								"transaction-line",
+								"tax-amount"
+							],
+							"currency-code",
+							[
+								"get-in",
+								"transaction-data",
+								"currency-code"
+							]
+						],
+						"currency-code",
+						[
+							"get-in",
+							"transaction-data",
+							"currency-code"
+						],
+						"seller-code",
+						[
+							"get-in",
+							"seller-data",
+							"merchant-code"
+						]
+					]
+				]
+			],
+			"scope": "transaction-line"
+		},
+		{
+			"name": "negative-fee",
+			"condition": [
+				"and",
+				[
+					"get-in",
+					"correlated-tax-fee",
+					"fee-key"
+				],
+				[
+					"get-in",
+					"transaction-line",
+					"tax-amount"
+				],
+				[
+					"get-in",
+					"refund",
+					"refund-tax-amount"
+				],
+				[
+					">=",
+					[
+						"get-in",
+						"refund",
+						"refund-note-number"
+					],
+					[
+						"or",
+						[
+							"get-in",
+							"transaction-data",
+							"last-refund-note-number"
+						],
+						0
+					]
+				]
+			],
+			"effect": [
+				"->",
+				[
+					"conj-in",
+					"refund",
+					"refund-fees",
+					[
+						"key-value-map",
+						"rule",
+						[
+							"get-in",
+							"_rule",
+							"name"
+						],
+						"type",
+						"refunded-tax-fee",
+						"correlated_fee_key",
+						[
+							"get-in",
+							"correlated-tax-fee",
+							"fee-key"
+						],
+						"amount",
+						[
+							"key-value-map",
+							"amount",
+							[
+								"-",
+								[
+									"get-in",
+									"refund",
+									"refund-tax-amount"
+								]
+							],
+							"currency-code",
+							[
+								"get-in",
+								"transaction-data",
+								"currency-code"
+							]
+						],
+						"seller-code",
+						[
+							"get-in",
+							"transaction-line",
+							"seller-code"
+						]
+					]
+				]
+			],
+			"scope": "refund"
+		},
+		{
+			"name": "postage-insurance-vat",
+			"condition": [
+				"and",
+				[
+					"var",
+					"max-tax"
+				],
+				[
+					"or",
+					[
+						"=",
+						[
+							"get-in",
+							"transaction-line",
+							"tax-region"
+						],
+						"EU"
+					],
+					[
+						"=",
+						[
+							"get-in",
+							"transaction-line",
+							"tax-region"
+						],
+						"GB"
+					]
+				],
+				[
+					"=",
+					[
+						"get-in",
+						"transaction-line",
+						"product-class"
+					],
+					"S"
+				]
+			],
+			"variables": [
+				"consignment-id",
+				[
+					"get-consignment-id",
+					[
+						"get-in",
+						"transaction-line"
+					]
+				],
+				"consignment-lines",
+				[
+					"->",
+					[
+						"get-in",
+						"transaction-data",
+						"transaction-lines"
+					],
+					[
+						"filter",
+						[
+							"not=",
+							[
+								"get-in",
+								"product-class"
+							],
+							"S"
+						]
+					],
+					[
+						"filter",
+						[
+							"=",
+							[
+								"get-consignment-id",
+								[
+									"this"
+								]
+							],
+							[
+								"var",
+								"consignment-id"
+							]
+						]
+					]
+				],
+				"max-tax-line",
+				[
+					"select-line-with-max-tax",
+					[
+						"var",
+						"consignment-lines"
+					]
+				],
+				"max-tax",
+				[
+					"->",
+					[
+						"var",
+						"max-tax-line"
+					],
+					[
+						"get-in",
+						"taxes"
+					],
+					[
+						"sort-by",
+						[
+							"get-in",
+							"rate"
+						]
+					],
+					[
+						"last"
+					]
+				]
+			],
+			"effect": [
+				"->",
+				[
+					"assoc-in",
+					"transaction-line",
+					"tax-rule-applied",
+					"postage-insurance-vat"
+				],
+				[
+					"assoc-in",
+					"transaction-line",
+					"tax-country-code",
+					[
+						"->",
+						[
+							"var",
+							"max-tax-line"
+						],
+						[
+							"get-in",
+							"tax-country-code"
+						]
+					]
+				],
+				[
+					"assoc-in",
+					"transaction-line",
+					"tax-country-subdivision-code",
+					[
+						"->",
+						[
+							"var",
+							"max-tax-line"
+						],
+						[
+							"get-in",
+							"tax-country-subdivision-code"
+						]
+					]
+				],
+				[
+					"assoc-in",
+					"transaction-line",
+					"tax-entity-name",
+					[
+						"->",
+						[
+							"var",
+							"max-tax-line"
+						],
+						[
+							"get-in",
+							"tax-entity-name"
+						]
+					]
+				],
+				[
+					"assoc-in",
+					"transaction-line",
+					"additional-currencies",
+					[
+						"->",
+						[
+							"var",
+							"max-tax-line"
+						],
+						[
+							"get-in",
+							"additional-currencies"
+						]
+					]
+				],
+				[
+					"assoc-in",
+					"transaction-line",
+					"tax-exempt",
+					[
+						"get-in",
+						[
+							"var",
+							"max-tax-line"
+						],
+						"tax-exempt"
+					]
+				],
+				[
+					"apply-tax",
+					[
+						"var",
+						"max-tax"
+					]
+				]
+			],
+			"scope": "post-tax-calc"
+		}
+	]
+}
