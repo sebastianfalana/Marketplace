@@ -1,9 +1,10 @@
 {
-	"marketplace_code": "UAT_newcust_MARKETPLACE",
+	"marketplace_code": "Rules034_MARKETPLACE_UAT",
 	"reference_merchant": {
-		"email": "sebastian+UAT_newcust_MP@taxamo.com",
+		"email": "sebastian.falana+rules34mp@vertexinc.com ",
+		"postal_address_line1": "Address Line 1",
 		"postal_address_line2": "Line 2",
-		"business_name": "Sebastian's marketplace",
+		"first_name": "P",
 		"settings": [
 			{
 				"effective_from": "1970-01-01",
@@ -11,7 +12,7 @@
 					"invoicing": {
 						"invoice_footer_text": "This change is after bug",
 						"invoice_logo_url": "https://kamituel.pl/images/19adcdb5-1600.avif",
-						"invoice_email_from_address": "sebastian+newreplay01@taxamo.com"
+						"invoice_email_from_address": "pedro.assuncao+mkp1@vertexinc.com"
 					}
 				}
 			},
@@ -33,6 +34,16 @@
 			{
 				"effective_from": "2021-12-17",
 				"value": {
+					"custom_rules": [
+						{
+							"name": "rule-dc-in-de",
+							"stage": "pre-tax-calc",
+							"condition": ["=", "store-transaction", ["get-in", "transaction-data", "request-type"]],
+							"effect": ["->",
+								["assoc-in", "transaction-line", "ship-from-address", "country-code", "DE"]
+							]
+						}
+					],
 					"taxation": {
 						"digital": {
 							"back_to_back_transaction_templates": {
@@ -64,14 +75,13 @@
 						"EU": {
 							"taxation": {
 								"digital": {
-									"is_taxation_enabled": true,
-									"is_seller_located_within_region": false
+									"is_taxation_enabled": true
 								},
 								"physical": {
 									"is_seller_located_within_region": true,
-									"ioss_member_state_of_identification": "IT",
+									"ioss_member_state_of_identification": "DE",
 									"ioss_registration_number": "11_MP_test_ioss",
-									"oss_member_state_of_identification": "FR",
+									"oss_member_state_of_identification": "PL",
 									"oss_registration_number": "11_MP_test_oss"
 								}
 							}
@@ -83,17 +93,6 @@
 								},
 								"physical": {
 									"is_seller_located_within_region": false
-								}
-							}
-						},
-						"SG": {
-							"taxation": {
-								"digital": {
-									"is_taxation_enabled": true
-								},
-								"physical": {
-									"is_seller_located_within_region": true,
-									"is_approved_ovr_vendor": false
 								}
 							}
 						},
@@ -284,35 +283,6 @@
 								}
 							}
 						},
-						"US": {
-							"taxation": {
-								"physical": {
-									"is_seller_registered": true,
-									"is_physical_tax_enabled": true,
-									"seller_tax_number": "MERCHANTEU_US"
-								}
-							},
-							"country_subdivisions": {
-								"AZ": {
-									"taxation": {
-										"physical": {
-											"is_seller_registered": true,
-											"seller_tax_number": "AZ_US_TAX_NUMBER",
-											"has_physical_presence": true
-										}
-									}
-								},
-								"CA": {
-									"taxation": {
-										"physical": {
-											"is_seller_registered": true,
-											"seller_tax_number": "CA_US_TAX_NUMBER",
-											"has_physical_presence": true
-										}
-									}
-								}
-							}
-						},
 						"EE": {
 							"taxation": {
 								"physical": {
@@ -470,340 +440,141 @@
 				}
 			}
 		],
-		"first_name": "s7mpuat",
-		"postal_address_line1": "Address Line 1"
+		"business_name": "Olusegun marketplace",
+		"last_name": "Olusegun"
 	},
 	"admin_settings": [
 		{
 			"effective_from": "1970-01-01",
 			"value": {
-				"regions": {
-					"NO": {
-						"lila": {
-							"digital": {
-								"is_lila_enabled": true
+				"custom_rules": [
+					{
+						"name": "match-seller-1-rule",
+						"condition": [
+							"=",
+							[
+								"get-in",
+								"transaction-line",
+								"seller-code"
+							],
+							"seller-1"
+						],
+						"evaluation_mode": "all-matching",
+						"stage": "pre-tax-calc",
+						"rules": [
+							{
+								"name": "rule-dc-in-pl",
+								"condition": [
+
+									"date-in-range",
+									"2022-06-01",
+									[
+										"get-in",
+										"transaction-data",
+										"tax-timestamp"
+									],
+									"2022-12-31"
+								],
+
+								"effect": [
+									"->",
+									[
+										"assoc-in",
+										"transaction-line",
+										"ship-from-address",
+										"country-code",
+										"PL"
+									]
+								]
 							},
-							"physical": {
-								"is_lila_enabled": true
-							},
-							"services": {
-								"is_lila_enabled": true
-							}
-						}
-					},
-					"AU": {
-						"lila": {
-							"digital": {
-								"is_lila_enabled": true
-							},
-							"physical": {
-								"is_lila_enabled": true
-							},
-							"services": {
-								"is_lila_enabled": true
-							}
-						}
-					},
-					"NZ": {
-						"lila": {
-							"digital": {
-								"is_lila_enabled": true
-							},
-							"physical": {
-								"is_lila_enabled": true
-							},
-							"services": {
-								"is_lila_enabled": true
-							}
-						}
-					},
-					"SG": {
-						"lila": {
-							"digital": {
-								"is_lila_enabled": true
-							},
-							"physical": {
-								"is_lila_enabled": true
-							},
-							"services": {
-								"is_lila_enabled": true
-							}
-						}
-					},
-					"US": {
-						"lila": {
-							"digital": {
-								"is_lila_enabled": true
-							},
-							"physical": {
-								"is_lila_enabled": true
-							},
-							"services": {
-								"is_lila_enabled": true
-							}
-						}
-					},
-					"EU": {
-						"taxation": {
-							"physical": {
-								"logic_rules": [
-									{
-										"transaction_line_kind": "b2c",
-										"rules": [
-											{
-												"name": "physical-shipment-into-EU-goods-above-150-eur-taxamo",
-												"condition": [
-													"and",
-													[
-														"not",
-														[
-															"=",
-															[
-																"get-in",
-																"transaction-line",
-																"ship-from-address",
-																"tax-region"
-															],
-															"EU"
-														]
-													],
-													[
-														">",
-														[
-															"get-in-arg",
-															[
-																"var",
-																"consignment-value"
-															],
-															"amount"
-														],
-														"150"
-													]
-												],
-												"variables": [
-													"consignment-value",
-													[
-														"convert-amount-with-fallback",
-														[
-															"get-in",
-															"amount-for-shipment-country"
-														],
-														[
-															"get-tax-region-by-key",
-															"EU"
-														],
-														"EUR",
-														[
-															"get-in",
-															"transaction-data",
-															"currency-code"
-														],
-														[
-															"get-in",
-															"transaction-data",
-															"tax-timestamp"
-														],
-														[
-															"get-in",
-															"transaction-data",
-															"tax-timestamp"
-														]
-													]
-												],
-												"effect": [
-													"->",
-													[
-														"assoc-in",
-														"transaction-line",
-														"tax-liability-rule",
-														[
-															"get-in",
-															"_rule",
-															"name"
-														]
-													],
-													[
-														"assoc-in",
-														"transaction-line",
-														"tax-liability-owner-code",
-														"buyer"
-													],
-													[
-														"assoc-in",
-														"transaction-line",
-														"additional-currencies",
-														"consignment",
-														[
-															"dissoc",
-															[
-																"var",
-																"consignment-value"
-															],
-															"amount"
-														]
-													],
-													[
-														"assoc-in",
-														"transaction-line",
-														"invoice-status",
-														"F"
-													]
-												]
-											}
-										]
-									}
+							{
+								"name": "rule-dc-in-pl-additional-address-info",
+								"condition": [
+									"date-in-range",
+									"2022-06-01",
+									[
+										"get-in",
+										"transaction-data",
+										"tax-timestamp"
+									],
+									"2022-12-31"
+								],
+								"effect": [
+									"->",
+									[
+										"assoc-in",
+										"transaction-line",
+										"ship-from-address",
+										"postal-code",
+										"11-122"
+									]
 								]
 							}
-						},
+						]
+					},
+					{
+						"name": "match-seller-1-rule2",
+						"condition": [
+							"=",
+							[
+								"get-in",
+								"transaction-line",
+								"seller-code"
+							],
+							"seller-1"
+						],
+						"evaluation_mode": "all-matching",
+						"stage": "pre-tax-calc",
+						"rules": [
+							{
+								"name": "rule-dc-in-pl2",
+								"condition": [
+									"=",
+									"store-transaction",
+									[
+										"get-in",
+										"transaction-data",
+										"request-type"
+									]
+								],
+								"effect": [
+									"->",
+									[
+										"assoc-in",
+										"transaction-line",
+										"ship-from-address",
+										"city",
+										"Warsaw"
+									],
+									[
+										"assoc-in",
+										"transaction-line",
+										"ship-from-address",
+										"street-name",
+										"TEST 123"
+									]
+								]
+							}
+						]
+					}
+				],
+				"regions": {
+					"EU": {
 						"lila": {
-							"digital": {
-								"is_lila_enabled": true
-							},
 							"physical": {
 								"is_lila_enabled": true
 							},
-							"services": {
+							"digital": {
 								"is_lila_enabled": true
 							}
 						}
 					},
 					"GB": {
-						"taxation": {
-							"physical": {
-								"logic_rules": [
-									{
-										"transaction_line_kind": "b2c",
-										"rules": [
-											{
-												"name": "physical-shipment-into-GB-goods-below-or-equal-135-gbp-taxamo",
-												"condition": [
-													"and",
-													[
-														"=",
-														[
-															"get-in",
-															"transaction-data",
-															"ship-to-address",
-															"tax-region"
-														],
-														"GB"
-													],
-													[
-														"not",
-														[
-															"=",
-															[
-																"get-in",
-																"transaction-line",
-																"ship-from-address",
-																"tax-region"
-															],
-															"GB"
-														]
-													],
-													[
-														"not=",
-														[
-															"get-in",
-															"transaction-line",
-															"ship-from-address",
-															"country-subdivision-code"
-														],
-														"GB-NIR"
-													],
-													[
-														"<=",
-														[
-															"get-in-arg",
-															[
-																"var",
-																"consignment-value"
-															],
-															"amount"
-														],
-														"135"
-													]
-												],
-												"variables": [
-													"consignment-value",
-													[
-														"convert-amount-with-fallback",
-														[
-															"get-in",
-															"amount-for-shipment-country"
-														],
-														[
-															"get-tax-region-by-key",
-															"GB"
-														],
-														"GBP",
-														[
-															"get-in",
-															"transaction-data",
-															"currency-code"
-														],
-														[
-															"get-in",
-															"transaction-data",
-															"tax-timestamp"
-														],
-														[
-															"get-in",
-															"transaction-data",
-															"tax-timestamp"
-														]
-													]
-												],
-												"effect": [
-													"->",
-													[
-														"assoc-in",
-														"transaction-line",
-														"tax-liability-rule",
-														[
-															"get-in",
-															"_rule",
-															"name"
-														]
-													],
-													[
-														"assoc-in",
-														"transaction-line",
-														"tax-liability-owner-code",
-														"buyer"
-													],
-													[
-														"assoc-in",
-														"transaction-line",
-														"additional-currencies",
-														"consignment",
-														[
-															"dissoc",
-															[
-																"var",
-																"consignment-value"
-															],
-															"amount"
-														]
-													],
-													[
-														"assoc-in",
-														"transaction-line",
-														"invoice-status",
-														"F"
-													]
-												]
-											}
-										]
-									}
-								]
-							}
-						},
 						"lila": {
-							"digital": {
+							"physical": {
 								"is_lila_enabled": true
 							},
-							"physical": {
+							"digital": {
 								"is_lila_enabled": true
 							}
 						}
@@ -814,6 +585,12 @@
 					"seller_role_names": [
 						"assure_seller_owner"
 					],
+					"registration_location_restrictions": {
+						"restriction_message": "At the moment, we are only accepting sign-ups from United Kingdom (UK) established businesses.",
+						"allowed_countries": [
+							"GB"
+						]
+					},
 					"seller_settings": {
 						"invoicing": {
 							"invoice_logo_url": "https://kamituel.pl/images/19adcdb5-1600.webp"
@@ -885,12 +662,6 @@
 							"label": "Other"
 						}
 					],
-					"registration_location_restrictions": {
-						"restriction_message": "At the moment, we are only accepting sign-ups from United Kingdom (UK) established businesses.",
-						"allowed_countries": [
-							"GB"
-						]
-					},
 					"activation_email": {
 						"subject": "Taxamo Assure Contract and Account Activation Link",
 						"template_html": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\n  <body>\n    <table\n      align=\"center\"\n      border=\"0\"\n      cellpadding=\"0\"\n      cellspacing=\"0\"\n      height=\"100%\"\n      width=\"100%\"\n      style=\"\n        border-collapse: collapse;\n        height: 100%;\n        margin: 0;\n        padding: 0;\n        width: 100%;\n        background-color: #fafafa;\n      \"\n    >\n      <tbody>\n        <tr>\n          <td\n            align=\"center\"\n            valign=\"top\"\n            style=\"\n              height: 100%;\n              margin: 0;\n              padding: 10px;\n              width: 100%;\n              border-top: 0;\n            \"\n          >\n            <table\n              border=\"0\"\n              cellpadding=\"0\"\n              cellspacing=\"0\"\n              width=\"100%\"\n              style=\"\n                border-collapse: collapse;\n                border: 0;\n                max-width: 600px !important;\n              \"\n            >\n              <tbody>\n                <tr>\n                  <td\n                    valign=\"top\"\n                    style=\"\n                      background-color: #ffffff;\n                      border-top: 0;\n                      border-bottom: 2px solid #eaeaea;\n                      padding-top: 10px;\n                      padding-bottom: 9px;\n                    \"\n                  >\n                    <table\n                      border=\"0\"\n                      cellpadding=\"0\"\n                      cellspacing=\"0\"\n                      width=\"100%\"\n                      style=\"min-width: 100%; border-collapse: collapse\"\n                    >\n                      <tbody>\n                        <tr>\n                          <td valign=\"top\" style=\"padding-top: 9px\">\n                            <table\n                              align=\"left\"\n                              border=\"0\"\n                              cellpadding=\"0\"\n                              cellspacing=\"0\"\n                              style=\"\n                                max-width: 100%;\n                                min-width: 100%;\n                                border-collapse: collapse;\n                              \"\n                              width=\"100%\"\n                            >\n                              <tbody>\n                                <tr>\n                                  <td\n                                    valign=\"top\"\n                                    style=\"\n                                      padding: 0px 18px 9px;\n                                      font-family: Arial, 'Helvetica Neue',\n                                        Helvetica, sans-serif;\n                                      font-size: 13px;\n                                      word-break: break-word;\n                                      color: #202020;\n                                      line-height: 150%;\n                                      text-align: left;\n                                    \"\n                                  >\n                                    <h2\n                                      style=\"\n                                        display: block;\n                                        margin: 0;\n                                        padding: 0;\n                                        color: #202020;\n                                        font-family: Helvetica;\n                                        font-size: 22px;\n                                        font-style: normal;\n                                        font-weight: bold;\n                                        line-height: 125%;\n                                        letter-spacing: normal;\n                                        text-align: left;\n                                      \"\n                                    >\n                                      Thank you for signing up with Taxamo Assure!\n                                    </h2>\n\n                                    <p\n                                      style=\"\n                                        font-family: Arial, 'Helvetica Neue',\n                                          Helvetica, sans-serif;\n                                        font-size: 13px;\n                                        margin: 10px 0;\n                                        padding: 0;\n                                        color: #202020;\n                                        line-height: 150%;\n                                        text-align: left;\n                                      \"\n                                    >\n                                      To complete your\n                                      <span class=\"il\">registration</span> and\n                                      set-up your access password, please click\n                                      on the button below:<br />\n                                    </p>\n                                    <p\n                                      style=\"\n                                        padding: 10px 0;\n                                      \"\n                                    >\n                                      <a\n                                        style=\"\n                                          text-decoration: none;\n                                          background-color: #136ca4;\n                                          margin-left: 0px;\n                                          padding: 10px 20px;\n                                          color: #fff;\n                                          text-transform: uppercase;\n                                          font-weight: bold;\n                                          font-size: 13px;\n                                        \"\n                                        href=\"{{activation-url}}\"\n                                        >Complete registration</a\n                                      >\n                                    </p>\n\n                                    <p\n                                      style=\"\n                                        font-family: Arial, 'Helvetica Neue',\n                                          Helvetica, sans-serif;\n                                        font-size: 13px;\n                                        margin: 10px 0;\n                                        padding: 0;\n                                        color: #202020;\n                                        line-height: 150%;\n                                        text-align: left;\n                                      \"\n                                    >\n                                      Once you have set-up your password you\n                                      will have immediate access to the Taxamo\n                                      Dashboard.\n                                      <br />\n                                      <br />\n                                      Please find attached a copy of the Terms of Service you accepted\n                                      on {{contract-accepted-at-human-readable}} for your records.\n                                      <br />\n                                      <br />\n                                      Looking forward to working with you,<br />\n                                      <strong>Your Taxamo team</strong>\n                                    </p>\n\n                                    <div style=\"text-align: left\">\n                                      <a\n                                        href=\"https://www.taxamo.com\"\n                                        style=\"\n                                          color: #a6a6a5;\n                                          text-decoration: none;\n                                          font-weight: normal;\n                                        \"\n                                        target=\"_blank\"\n                                        data-saferedirecturl=\"https://www.google.com/url?hl=en&amp;q=https://www.taxamo.com&amp;source=gmail&amp;ust=1472292147565000&amp;usg=AFQjCNFCBc0o-n9t6ktH0LdWfXuf64O_hQ\"\n                                        >www.taxamo.com</a\n                                      >\n                                    </div>\n                                  </td>\n                                </tr>\n                              </tbody>\n                            </table>\n                          </td>\n                        </tr>\n                      </tbody>\n                    </table>\n                  </td>\n                </tr>\n                <tr>\n                  <td\n                    valign=\"top\"\n                    style=\"\n                      background-color: #fafafa;\n                      border-top: 0;\n                      border-bottom: 0;\n                      padding-top: 9px;\n                      padding-bottom: 9px;\n                    \"\n                  ></td>\n                </tr>\n              </tbody>\n            </table>\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </body>\n</html>\n",
@@ -914,12 +685,11 @@
 				},
 				"oseries": {
 					"client_id": "marketplaceQA1",
-					"client_secret_arn": "arn:aws:secretsmanager:eu-west-1:539543036863:secret:qa-oseries-client-secret-1jdEPb",
-					"client_secret_version_id": "6e7460cf-2f44-466f-95d4-f51c848d0b4d",
-					"client_scope": "calc-rest-api",
-					"auth_url": "https://qaauth.vertexsmb.com/identity/connect/token",
+					"client_secret_version_id": "eaedd751-dafc-4c66-ba7f-0a55221660ef",
 					"calc_url": "https://qaconnect.vertexsmb.com/vertex-ws/v2/supplies",
 					"use_caching": false,
+					"client_scope": "calc-rest-api",
+					"client_secret_arn": "arn:aws:secretsmanager:eu-west-1:378314444311:secret:qa-oseries-client-secret20220215123441575600000002-Aos6B4",
 					"supported_cn_codes": [
 						"1022110000",
 						"01022110000",
@@ -956,472 +726,6 @@
 					"auth_url": "https://qaauth.vertexsmb.com/identity/connect/token"
 				}
 			}
-		}
-	],
-	"admin_custom_rules": [
-		{
-			"name": "flat-fee",
-			"condition": [
-				"and",
-				[
-					"=",
-					[
-						"get-in",
-						"transaction-line",
-						"special-tax-scheme"
-					],
-					"IOSS"
-				],
-				[
-					"=",
-					[
-						"get-in",
-						"transaction-line",
-						"tax-liability-owner-code"
-					],
-					[
-						"get-in",
-						"platform-data",
-						"code"
-					]
-				],
-				[
-					"not",
-					[
-						"get-in",
-						"flat-fees",
-						[
-							"get-in",
-							"seller-data",
-							"merchant-code"
-						]
-					]
-				]
-			],
-			"effect": [
-				"->",
-				[
-					"conj-in",
-					"transaction-data",
-					"fees",
-					[
-						"key-value-map",
-						"rule",
-						[
-							"get-in",
-							"_rule",
-							"name"
-						],
-						"type",
-						"amount-fee",
-						"amount",
-						[
-							"key-value-map",
-							"amount",
-							2,
-							"currency-code",
-							"EUR"
-						],
-						"seller-code",
-						[
-							"get-in",
-							"seller-data",
-							"merchant-code"
-						]
-					]
-				],
-				[
-					"assoc-in",
-					"flat-fees",
-					[
-						"get-in",
-						"seller-data",
-						"merchant-code"
-					],
-					true
-				]
-			],
-			"scope": "transaction-line"
-		},
-		{
-			"name": "tax-fee",
-			"condition": [
-				"and",
-				[
-					"=",
-					[
-						"get-in",
-						"transaction-line",
-						"special-tax-scheme"
-					],
-					"IOSS"
-				],
-				[
-					"get-in",
-					"transaction-line",
-					"tax-amount"
-				],
-				[
-					"=",
-					[
-						"get-in",
-						"transaction-line",
-						"tax-liability-owner-code"
-					],
-					[
-						"get-in",
-						"platform-data",
-						"code"
-					]
-				]
-			],
-			"effect": [
-				"->",
-				[
-					"conj-in",
-					"transaction-line",
-					"fees",
-					[
-						"key-value-map",
-						"rule",
-						[
-							"get-in",
-							"_rule",
-							"name"
-						],
-						"type",
-						"tax-fee",
-						"amount",
-						[
-							"key-value-map",
-							"amount",
-							[
-								"get-in",
-								"transaction-line",
-								"tax-amount"
-							],
-							"currency-code",
-							[
-								"get-in",
-								"transaction-data",
-								"currency-code"
-							]
-						],
-						"currency-code",
-						[
-							"get-in",
-							"transaction-data",
-							"currency-code"
-						],
-						"seller-code",
-						[
-							"get-in",
-							"seller-data",
-							"merchant-code"
-						]
-					]
-				]
-			],
-			"scope": "transaction-line"
-		},
-		{
-			"name": "negative-fee",
-			"condition": [
-				"and",
-				[
-					"get-in",
-					"correlated-tax-fee",
-					"fee-key"
-				],
-				[
-					"get-in",
-					"transaction-line",
-					"tax-amount"
-				],
-				[
-					"get-in",
-					"refund",
-					"refund-tax-amount"
-				],
-				[
-					">=",
-					[
-						"get-in",
-						"refund",
-						"refund-note-number"
-					],
-					[
-						"or",
-						[
-							"get-in",
-							"transaction-data",
-							"last-refund-note-number"
-						],
-						0
-					]
-				]
-			],
-			"effect": [
-				"->",
-				[
-					"conj-in",
-					"refund",
-					"refund-fees",
-					[
-						"key-value-map",
-						"rule",
-						[
-							"get-in",
-							"_rule",
-							"name"
-						],
-						"type",
-						"refunded-tax-fee",
-						"correlated_fee_key",
-						[
-							"get-in",
-							"correlated-tax-fee",
-							"fee-key"
-						],
-						"amount",
-						[
-							"key-value-map",
-							"amount",
-							[
-								"-",
-								[
-									"get-in",
-									"refund",
-									"refund-tax-amount"
-								]
-							],
-							"currency-code",
-							[
-								"get-in",
-								"transaction-data",
-								"currency-code"
-							]
-						],
-						"seller-code",
-						[
-							"get-in",
-							"transaction-line",
-							"seller-code"
-						]
-					]
-				]
-			],
-			"scope": "refund"
-		},
-		{
-			"name": "postage-insurance-vat",
-			"condition": [
-				"and",
-				[
-					"var",
-					"max-tax"
-				],
-				[
-					"or",
-					[
-						"=",
-						[
-							"get-in",
-							"transaction-line",
-							"tax-region"
-						],
-						"EU"
-					],
-					[
-						"=",
-						[
-							"get-in",
-							"transaction-line",
-							"tax-region"
-						],
-						"GB"
-					]
-				],
-				[
-					"=",
-					[
-						"get-in",
-						"transaction-line",
-						"product-class"
-					],
-					"S"
-				]
-			],
-			"variables": [
-				"consignment-id",
-				[
-					"get-consignment-id",
-					[
-						"get-in",
-						"transaction-line"
-					]
-				],
-				"consignment-lines",
-				[
-					"->",
-					[
-						"get-in",
-						"transaction-data",
-						"transaction-lines"
-					],
-					[
-						"filter",
-						[
-							"not=",
-							[
-								"get-in",
-								"product-class"
-							],
-							"S"
-						]
-					],
-					[
-						"filter",
-						[
-							"=",
-							[
-								"get-consignment-id",
-								[
-									"this"
-								]
-							],
-							[
-								"var",
-								"consignment-id"
-							]
-						]
-					]
-				],
-				"max-tax-line",
-				[
-					"select-line-with-max-tax",
-					[
-						"var",
-						"consignment-lines"
-					]
-				],
-				"max-tax",
-				[
-					"->",
-					[
-						"var",
-						"max-tax-line"
-					],
-					[
-						"get-in",
-						"taxes"
-					],
-					[
-						"sort-by",
-						[
-							"get-in",
-							"rate"
-						]
-					],
-					[
-						"last"
-					]
-				]
-			],
-			"effect": [
-				"->",
-				[
-					"assoc-in",
-					"transaction-line",
-					"tax-rule-applied",
-					"postage-insurance-vat"
-				],
-				[
-					"assoc-in",
-					"transaction-line",
-					"tax-country-code",
-					[
-						"->",
-						[
-							"var",
-							"max-tax-line"
-						],
-						[
-							"get-in",
-							"tax-country-code"
-						]
-					]
-				],
-				[
-					"assoc-in",
-					"transaction-line",
-					"tax-country-subdivision-code",
-					[
-						"->",
-						[
-							"var",
-							"max-tax-line"
-						],
-						[
-							"get-in",
-							"tax-country-subdivision-code"
-						]
-					]
-				],
-				[
-					"assoc-in",
-					"transaction-line",
-					"tax-entity-name",
-					[
-						"->",
-						[
-							"var",
-							"max-tax-line"
-						],
-						[
-							"get-in",
-							"tax-entity-name"
-						]
-					]
-				],
-				[
-					"assoc-in",
-					"transaction-line",
-					"additional-currencies",
-					[
-						"->",
-						[
-							"var",
-							"max-tax-line"
-						],
-						[
-							"get-in",
-							"additional-currencies"
-						]
-					]
-				],
-				[
-					"assoc-in",
-					"transaction-line",
-					"tax-exempt",
-					[
-						"get-in",
-						[
-							"var",
-							"max-tax-line"
-						],
-						"tax-exempt"
-					]
-				],
-				[
-					"apply-tax",
-					[
-						"var",
-						"max-tax"
-					]
-				]
-			],
-			"scope": "post-tax-calc"
 		}
 	]
 }

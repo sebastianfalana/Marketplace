@@ -13,6 +13,7 @@ public class MpSpecProvider {
         RequestSpecBuilder reqBuilder = new RequestSpecBuilder();
 
         reqBuilder.addHeader("x-taxamo-token",Configuration.getXTaxamoToken());
+        reqBuilder.addHeader("x-jws-signature",Configuration.getPrivateKey());
         reqBuilder.setContentType(ContentType.JSON);
 
         return reqBuilder.build();

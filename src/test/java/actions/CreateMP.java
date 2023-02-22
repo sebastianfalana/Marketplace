@@ -19,7 +19,7 @@ public class CreateMP extends TestBase {
                     .spec(MpSpecProvider.getNewMPReqSpec())
                     .body(new File("src/main/resources/createMP.json")).
             when()
-                    .post(Configuration.getSellerDBAdmin()).
+                    .post(Configuration.getSellerDBAdmin()+Configuration.getAdminEndpoint()).
             then()
                     .statusCode(200)
                     .spec(MpSpecProvider.getNewMPRespSpec());

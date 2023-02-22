@@ -5,8 +5,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-import static jdk.internal.net.http.common.Utils.getProperty;
-
 public class Configuration {
 
     public static String getSellerDBAdmin() {
@@ -21,7 +19,9 @@ public class Configuration {
     }
 
     public static String getPrivateKey() {
-        return getProperty("privateKey");
+        return getProperty("x-jws-signature");
+    }public static String getAdminEndpoint() {
+        return getProperty("adminEndpoint");
     }
 
     private static String getProperty(String propertyName) {
