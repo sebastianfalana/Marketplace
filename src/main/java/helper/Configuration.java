@@ -1,11 +1,16 @@
 package helper;
 
 
+import com.auth0.jwt.interfaces.RSAKeyProvider;
+
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.security.interfaces.RSAPrivateKey;
 import java.util.Properties;
 
 public class Configuration {
+
+
 
     public static String getSellerDBAdmin() {
         return getProperty("sellerDBAdmin");
@@ -18,8 +23,8 @@ public class Configuration {
         return getProperty("xTaxamoToken");
     }
 
-    public static String getPrivateKey() {
-        return getProperty("x-jws-signature");
+    public static RSAKeyProvider getPrivateKey() {
+        return getProperty("privateKey");
     }public static String getAdminEndpoint() {
         return getProperty("adminEndpoint");
     }
