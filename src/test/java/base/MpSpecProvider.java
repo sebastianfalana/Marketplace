@@ -24,16 +24,16 @@ public class MpSpecProvider {
         return reqBuilder.build();
     }
 
-    public static ResponseSpecification getJWT() {
-        try {
-            Algorithm algorithm = Algorithm.RSA512(Configuration.getPrivateKey());
-            String token = JWT.create()
-                    .withIssuer("auth0")
-                    .sign(algorithm);
-        } catch (JWTCreationException exception){
-            // Invalid Signing configuration / Couldn't convert Claims.
-        }
-    }
+//    public static ResponseSpecification getJWT() {
+//        try {
+//            Algorithm algorithm = Algorithm.RSA512(Configuration.getPrivateKey());
+//            String token = JWT.create()
+//                    .withIssuer("auth0")
+//                    .sign(algorithm);
+//        } catch (JWTCreationException exception){
+//            // Invalid Signing configuration / Couldn't convert Claims.
+//        }
+//    }
 
     public static ResponseSpecification getNewMPRespSpec() {
         ResponseSpecBuilder responseSpecBuilder = new ResponseSpecBuilder();
